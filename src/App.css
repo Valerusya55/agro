@@ -1,38 +1,187 @@
-.App {
+body {
+  background-color: #EDEDED;
+}
+
+.FooterBlock {
+  width: 33.333%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  height: 60%;
+  
+}
+.FooterBlock img{
+  width: 7%;
+  margin-right: 3%;
+  margin-left: 3%;
+  position: static;  
+}
+
+ul {
+  margin-bottom: 10%;
+  margin-left: 20%;
+  text-align: left;
+}
+
+li {
+  line-height: 70%;
+  font-size: 120%;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.Footer {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+}
+.line{
+  border-bottom: 3px solid #09A725;
+}
+
+.MenuBottom {
+  background: #09A725;
+  position: absolute;
+  width: 100%;
+  height: 6%;
+  top: 17%;
+}
+
+.MenuMiddle {
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  background: url(Components/background.jpg);
+  background-position: 100% 60%;
+  height: 14%;
+}
+
+.MenuBottom a {
+  color: #000000 !important;
+  font-weight: 500;
+  font-size: 130%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MenuBottom a:hover {
+  color: #000000 !important;
+  background: #007915;
+  font-weight: 500;
+  font-size: 130%;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headerImage {
+  width: 24px;
+  height: 26px;
+  left: 10px;
+  top: 13px;
+  float: left;
+  position: static;
+  margin: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.one {
+  display: inline-flex;
+  float: left;
+  padding-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.two {
+  display: inline-flex;
+  float: right;
+  padding-right: 10px;
+}
+
+.MenuTop {
+  background-color: #09A725;
+  width: 100%;
+  height: 30px;
+}
+
+a {
+  padding: 5px;
+  font-size: 75%;
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #000;
+  font-size: 75%;
+  font-weight: bold;
+}
+
+p {
+  margin-top: -10%;
+  margin-left: 72%;
+  font-size: 16px;
+  color: #5E5E5E;
+}
+p1{
+  color: #6F6F6F;
+}
+
+p2{
+  padding: 5px;
+  color: #000000;
+  font-size: 14px;
+}
+
+
+
+
+.rightMenu {
+  width: 50%;
+  float: right;
+  height: 100%;
+}
+
+.leftMenu {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+
+Button {
+  width: 35%;
+  background-color: #09A725 !important;
+  border: #09A725 !important;
+  color: #000 !important;
+}
+
+Button a:hover {
+  width: 35%;
+  background-color: #007915 !important;
+  border: #007915 !important;
+  color: #000;
+}
+
+.control-picture {
+  float: right;
+  height: 100px;
+  width: 40%;
+  font-size: 130%;
+}
+
+.basket {
+  width: 15%;
+  position: static;
+  margin-top: 12%;
+  margin-left: 50%;
+}
+
+.control {
+  width: 60%;
+  float: left;
+  margin-top: 5%;
+  border: 1px solid #000000;
+  border-radius: 5px;
 }
