@@ -510,5 +510,50 @@ Button a:hover {
 }
 
 .search{
-  display: block;
+  margin-left: 5%;
+  height: 150px;
+}
+
+.lineSearch {
+  border-bottom: 1px solid #09A725;
+  margin-bottom: 1%;
+}
+
+.searchProduct{
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+.searchProduct a{
+  font-size: 2vh;
+}
+
+.basketProduct{
+  border: 1px solid #09A725;
+  border-radius: 5px;
+  width: 80%;
+  margin-top: 3%;
+  margin-left: 15%;
+}
+
+.basketProduct h1{
+  margin-left: 2%;
+}
+
+.basketProduct img{
+  width: 20%;
+  margin-left: 2%;
+  border: 1px solid #09A725;
+  border-radius: 3px;
+  margin-bottom: 1%;
+}
+
+.basketProduct a{
+  font-size: 2vh;
+  margin-top: 0;
+  margin-left: 1%;
+}
+
+h2{
+  margin-left: 2%;
 }

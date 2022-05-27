@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, FormControl, Container, Form} from 'react-bootstrap';
+import { Navbar, Nav, FormControl, Container, Form } from 'react-bootstrap';
 import logo from './logo.png';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from '../Pages/Main';
@@ -14,6 +14,7 @@ import Registration from './Registration';
 import Autorization from './Autorization';
 import User from '../Pages/User';
 import Search from '../Pages/Search';
+import Basket from '../Pages/Basket';
 
 
 export default class Header extends Component {
@@ -31,6 +32,7 @@ export default class Header extends Component {
 						<div className='two'>
 							<img className='headerImage' src='user.png'></img>
 							<Autorization />
+							|
 							<Registration />
 						</div>
 					</div>
@@ -56,8 +58,8 @@ export default class Header extends Component {
 								</Form>
 							</div>
 							<div className='control-picture'>
-								<img src='basket.png' className='basket'></img>
-								<a href=''>Корзина</a>
+								<a href='/basket'><img src='basket.png' className='basket'></img></a>
+								<a href='/basket'>Корзина</a>
 								<p>0 ₽</p>
 							</div>
 						</div>
@@ -89,6 +91,7 @@ export default class Header extends Component {
 						<Route exact path={"/product"} element={< Product />} />
 						<Route exact path={"/user"} element={< User />} />
 						<Route exact path={"/search"} element={< Search />} />
+						<Route exact path={"/basket"} element={< Basket />} />
 					</Routes>
 				</Router>
 			</>
