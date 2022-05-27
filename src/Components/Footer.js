@@ -15,7 +15,7 @@ export default class Footerooter extends Component {
                         <li><a href=''>Возврат денежных средств</a></li>
                     </ul>
                 </div>
-                <div className='FooterBlock' text-align="center">
+                <div className='FooterBlock'>
                     <h5>Оставайтесь на связи</h5>
                     <a href='https://t.me/+79040725414'><img src='telega.png'></img></a>
                     <a href='https://wa.me/79040725414?text=Здравствуйте%2C+у+меня+есть+вопрос'><img src='whatsup.png'></img></a>

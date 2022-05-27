@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, FormControl, Container, Form, Button } from 'react-bootstrap';
+import { Navbar, Nav, FormControl, Container, Form} from 'react-bootstrap';
 import logo from './logo.png';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from '../Pages/Main';
@@ -7,6 +7,14 @@ import About from '../Pages/About';
 import Categories from '../Pages/Categories';
 import Production from '../Pages/Production';
 import Contacts from '../Pages/Contacts';
+import Subcategories from '../Pages/Subcategories';
+import Products from '../Pages/Products';
+import Product from '../Pages/Product';
+import Registration from './Registration';
+import Autorization from './Autorization';
+import User from '../Pages/User';
+import Search from '../Pages/Search';
+
 
 export default class Header extends Component {
 	render() {
@@ -22,7 +30,8 @@ export default class Header extends Component {
 						</div>
 						<div className='two'>
 							<img className='headerImage' src='user.png'></img>
-							<a href="">Вход</a>
+							<Autorization />
+							<Registration />
 						</div>
 					</div>
 					<div className='MenuMiddle'>
@@ -43,7 +52,7 @@ export default class Header extends Component {
 										type="text"
 										placeholder="Поиск"
 									/>
-									<Button>Найти</Button>
+									<a href='/search'>Найти</a>
 								</Form>
 							</div>
 							<div className='control-picture'>
@@ -53,7 +62,7 @@ export default class Header extends Component {
 							</div>
 						</div>
 					</div>
-					<Navbar collapseOnSelect expand="md" className='MenuBottom'>
+					<Navbar collapseOnSelect expand="md" className='MenuBottom' >
 						<Container>
 							<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 							<Navbar.Collapse id="responsive-navbar-nav">
@@ -75,6 +84,11 @@ export default class Header extends Component {
 						<Route exact path={"/categories"} element={< Categories />} />
 						<Route exact path={"/production"} element={< Production />} />
 						<Route exact path={"/contacts"} element={< Contacts />} />
+						<Route exact path={"/subcategories"} element={< Subcategories />} />
+						<Route exact path={"/products"} element={< Products />} />
+						<Route exact path={"/product"} element={< Product />} />
+						<Route exact path={"/user"} element={< User />} />
+						<Route exact path={"/search"} element={< Search />} />
 					</Routes>
 				</Router>
 			</>
