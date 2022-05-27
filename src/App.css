@@ -557,3 +557,43 @@ Button a:hover {
 h2{
   margin-left: 2%;
 }
+
+.orderPrice{
+  border: 1px solid #09A725;
+  border-radius: 5px;
+  width: 80%;
+  margin-top: 6%;
+}
+
+.orderPrice p{
+  margin-left: 2%;
+  font-size: 2vh;
+  color: #6F6F6F;
+  font-weight: bold;
+}
+
+.orderPrice h1{
+  margin-left: 2%;
+}
+
+.orderPrice img{
+  margin-left: 2%;
+  float: left;
+  width: 5%;
+}
+
+.btnOrder a{
+  margin-top: 8%;
+  background-color: #09A725;
+  width: 70%;
+  height: 40px;
+  margin-bottom: 5%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2vh;
+  margin-left: 15%;
+}
+
+.btnOrder a:hover {
+  background-color: #007915 !important;
+}
