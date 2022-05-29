@@ -18,12 +18,19 @@ export default class User extends Component {
                     <div className="col-lg-9 col-md-9 col-xs-9 thumb">
                         <div className='order'>
                             <p>ЗАКАЗЫ</p>
-                            <select className="select" data-mdb-filter="true">
-                                <option defaultValue>Все</option>
-                                <option value="1">Активные</option>
-                                <option value="2">Завершенные</option>
-                                <option value="3">Отмененные</option>
-                            </select>
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Ссылка с href
+                                </a>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    Кнопка с data-target
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -16,9 +16,7 @@ export default class Registration extends Component {
                                     <input type="password" className="form-control" name="phone" id="phone" placeholder="Номер телефона"></input>
                                     <input type="password" className="form-control" name="pass" id="pass" placeholder="Пароль"></input>
                                     <input type="password" className="form-control" name="repeatPass" id="repeatPass" placeholder="Повторите пароль"></input>
-                                    <div className='btnReg'>
-                                        <a href="#" type="submit">Зарегистрироваться</a>
-                                    </div>
+                                    <button>Зарегистрироваться</button>
                                 </form>
                             </div>
                         </div>

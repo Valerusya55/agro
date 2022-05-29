@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import dropend from 'react-dropdown';
+import React, { Component } from 'react';
 import { Dropdown } from 'react-bootstrap';
 
 

@@ -24,9 +24,7 @@ export default class Basket extends Component {
                         <div className='lineSearch'></div>
                         <p>Товары, 2 шт.</p>
                         <p>Заказ будет готов 24.02.2022</p>
-                        <div className='btnOrder'>
-                            <a href='#' type="submit">Заказать</a>
-                        </div>
+                        <button>Заказать</button>
                         <img src='sogl.png'></img>
                         <p>Согласен с условиями Правил пользования торговой площадкой и правилами возврата</p>
                     </div>

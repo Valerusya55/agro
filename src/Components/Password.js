@@ -14,9 +14,7 @@ export default class Password extends Component {
                                     <input type="text" className="form-control" name="login" id="login" placeholder="email"></input>
                                     <input type="password" className="form-control" name="pass" id="pass" placeholder="Введите новый пароль"></input>
                                     <input type="password" className="form-control" name="pass" id="pass" placeholder="Повторите пароль"></input>
-                                    <div className='btnReg'>
-                                        <a href="" type="submit">Восстановить пароль</a>
-                                    </div>
+                                        <button>Восстановить пароль</button>
                                 </form>
                             </div>
                         </div>

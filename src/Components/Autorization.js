@@ -14,9 +14,7 @@ export default class Autorization extends Component {
                                 <form>
                                     <input type="text" className="form-control" name="login" id="login" placeholder="email"></input>
                                     <input type="password" className="form-control" name="pass" id="pass" placeholder="Пароль"></input>
-                                    <div className='btnReg'>
-                                        <a href="/user" type="submit">Войти</a>
-                                    </div>
+                                        <button>Войти</button>
                                     <p><Password /></p>
                                 </form>
                             </div>
