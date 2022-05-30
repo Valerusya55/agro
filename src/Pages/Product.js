@@ -14,26 +14,19 @@ export default class Product extends Component {
         <div className='productsMain'>
           <div className='verticalMenu'>
             <nav className="nav flex-column">
-              <div className="btn-group dropend">
-                <a className="dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                  Гидравлика
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a className="dropdown-item" href="#">Действие</a></li>
-                  <li><a className="dropdown-item" href="#">Другое действие</a></li>
-                  <li><a className="dropdown-item" href="#">Что-то еще здесь</a></li>
-                </ul>
+              <p>
+                <a class="btn" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Кнопка рабочая ▼</a>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                    <a className="" href="#">Опрыскиватели</a>
+              <a className="" href="#">Крестовины и карданные валы</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <Dropdown>
-                <Dropdown.Toggle id="dropdown-basic">
-                  Гидравлика
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
               <a className="" href="#">Опрыскиватели</a>
               <a className="" href="#">Крестовины и карданные валы</a>
               <a className="" href="#">Элеваторное оборудование</a>
@@ -41,6 +34,7 @@ export default class Product extends Component {
               <a className="" href="#">Цепи и транспортеры</a>
             </nav>
           </div>
+
           <div className='product'>
             <div className="row">
               <div className="col col-lg-4 col-md-4  col-md-offset-4 col-xs-4 thumb scale">
@@ -61,9 +55,11 @@ export default class Product extends Component {
                 <button>В корзину</button>
                 <p className='availability'>Наши менеджеры обязательно свяжутся с вами и уточнят условия заказа</p>
               </div>
+
             </div>
           </div>
         </div>
+
       </div>
     )
   }

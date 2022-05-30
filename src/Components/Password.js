@@ -5,7 +5,7 @@ export default class Password extends Component {
         return (
             <>
                 <a type="button" data-toggle="modal" data-target="#myModalPass">Забыли пароль?</a>
-                <div id="myModalPass" className="modal fade bd-example-modal-md" tabindex="-1" role="dialog" aria-hidden="true">
+                <div id="myModalPass" className="modal fade bd-example-modal-md" tabIndex="-1" role="dialog" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content">
                             <div className="container mt-4">

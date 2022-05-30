@@ -15,20 +15,14 @@ export default class User extends Component {
                             <p><ChangeData /></p>
                         </div>
                     </div>
-                    <div className="col-lg-9 col-md-9 col-xs-9 thumb">
-                        <div className='order'>
-                            <p>ЗАКАЗЫ</p>
-                            <p>
-                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    Ссылка с href
-                                </a>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                    Кнопка с data-target
-                                </button>
-                            </p>
-                            <div class="collapse" id="collapseExample">
+                    <p>
+                        <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Кнопка рабочая</a>
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
                                 <div class="card card-body">
-                                    Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                                 </div>
                             </div>
                         </div>
