@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import CounterBasket from '../Components/CounterBasket'
 
 export default class Basket extends Component {
     render() {
@@ -8,14 +9,19 @@ export default class Basket extends Component {
                     <div className='basketProduct'>
                         <h1>ТОВАРЫ</h1>
                         <div className='lineSearch'></div>
+                        <div className='productBasket'>
                         <img src='tovar.jpg'></img>
                         <a href=''>Название товара</a>
+                        <CounterBasket/>
+                        <p>25 ₽</p>
+                        </div>
                         <div className='lineSearch'></div>
+                        <div className='productBasket'>
                         <img src='tovar.jpg'></img>
                         <a href=''>Название товара</a>
-                        <div className='lineSearch'></div>
-                        <img src='tovar.jpg'></img>
-                        <a href=''>Название товара</a>
+                        <CounterBasket/>
+                        <p>25 ₽</p>
+                        </div>
                     </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-xs-4 thumb">

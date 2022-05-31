@@ -474,25 +474,25 @@ a:hover {
   margin-left: 20%;
 }
 
-.order p{
+.order p {
   font-size: 3vh;
   font-weight: bold;
   color: #5E5E5E;
   margin-bottom: 0.3%;
 }
 
-.control a{
+.control a {
   background-color: #09A725;
   width: 40%;
   font-size: 2vh;
   text-align: center;
 }
 
-.control a:hover{
+.control a:hover {
   background-color: #007915;
 }
 
-.search{
+.search {
   margin-left: 5%;
   height: 150px;
 }
@@ -502,28 +502,29 @@ a:hover {
   margin-bottom: 1%;
 }
 
-.searchProduct{
+.searchProduct {
   margin-bottom: 2%;
   margin-left: 2%;
 }
 
-.searchProduct a{
+.searchProduct a {
   font-size: 2vh;
 }
 
-.basketProduct{
+.basketProduct {
   border: 1px solid #09A725;
   border-radius: 5px;
   width: 80%;
   margin-top: 3%;
   margin-left: 15%;
+  margin-bottom: 2%;
 }
 
-.basketProduct h1{
+.basketProduct h1 {
   margin-left: 2%;
 }
 
-.basketProduct img{
+.basketProduct img {
   width: 20%;
   margin-left: 2%;
   border: 1px solid #09A725;
@@ -531,35 +532,35 @@ a:hover {
   margin-bottom: 1%;
 }
 
-.basketProduct a{
+.basketProduct a {
   font-size: 2vh;
   margin-top: 0;
   margin-left: 1%;
 }
 
-h2{
+h2 {
   margin-left: 2%;
 }
 
-.orderPrice{
+.orderPrice {
   border: 1px solid #09A725;
   border-radius: 5px;
   width: 80%;
   margin-top: 6%;
 }
 
-.orderPrice p{
+.orderPrice p {
   margin-left: 2%;
   font-size: 2vh;
   color: #6F6F6F;
   font-weight: bold;
 }
 
-.orderPrice h1{
+.orderPrice h1 {
   margin-left: 2%;
 }
 
-.orderPrice img{
+.orderPrice img {
   margin-top: 26%;
   float: left;
   width: 5%;
@@ -567,7 +568,7 @@ h2{
   margin-right: 2%;
 }
 
-.orderPrice button{
+.orderPrice button {
   margin-top: 8%;
   background-color: #09A725;
   border: #09A725;
@@ -592,18 +593,18 @@ h2{
   margin-top: 12%;
 }
 
-.productMenu .verticalMenu{
+.productMenu .verticalMenu {
   width: 30%;
 }
 
-.product .row .article{
+.product .row .article {
   margin-left: 50%;
   margin-top: 3%;
   margin-bottom: 0;
   color: #6F6F6F;
 }
 
-.product .row .nameProduct{
+.product .row .nameProduct {
   font-size: 3vh;
   margin-left: 5%;
   margin-top: 0;
@@ -616,17 +617,17 @@ h2{
   width: 70%;
 }
 
-.product{
+.product {
   margin-bottom: 5%;
 }
 
-.product .row .price{
+.product .row .price {
   font-size: 3vh;
   margin-left: 6%;
   margin-top: 0;
 }
 
-.product .row .availability{
+.product .row .availability {
   font-size: 2vh;
   margin-left: 6%;
   margin-top: 0;
@@ -634,7 +635,7 @@ h2{
   margin-top: 1%;
 }
 
-.product .row button{
+.product .row button {
   background-color: #C4C4C4;
   border: 1px solid #09A725;
   width: 20%;
@@ -648,34 +649,72 @@ h2{
   background-color: #6f6f6fbf !important;
 }
 
-.count{
-  display: flex;
-  height: 50px;
-  width: 50%;
-}
-
-.count h2{
-  margin: 0 10px;
-  font-size: 50px;
-}
-
-.product .row .count button{
-  background-color: #C4C4C4;
-  border: 1px solid #09A725;
-  text-align: center;
-  font-size: 2.5vh;
-  width: 10%;
-}
-
-.count button:hover {
-  background-color: #6f6f6fbf !important;
-}
-
-.dropdown-menu{
+.dropdown-menu {
   background-color: #EDEDED;
   width: 100%;
   margin-left: -30%;
   padding: 0;
   text-align: center;
   border: none;
+}
+
+.counter {
+  display: flex;
+  margin-bottom: 2%;
+  padding-left: 6%;
+}
+
+.textCounter {
+  font-size: 3vh;
+  width: 10%;
+  margin: 0;
+  text-align: center;
+}
+
+.product .row .btnCounter {
+  width: 5%;
+  margin: 0;
+}
+
+.product .row .counter .btnBasket{
+  margin-left: 5%;
+}
+
+.productBasket{
+  display: flex;
+}
+
+.productBasket button{
+  background-color: #C4C4C4;
+  border: 1px solid #09A725;
+  width: 20%;
+  font-size: 2.5vh;
+  text-align: center;
+  margin:0;
+}
+
+.productBasket button:hover {
+  background-color: #6f6f6fbf !important;
+}
+
+.counterBasket{
+  width: 30%;
+  display: flex;
+  height: 35px;
+  padding-left: 10%;
+}
+
+.counterBasket .textCounter{
+  width: 20%;
+  font-size: 2.5vh;
+}
+
+.productBasket a{
+  width: 20%;
+  height: 20px;
+}
+
+.productBasket p{
+  margin-left: 10%;
+  font-size: 3vh;
 }

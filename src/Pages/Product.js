@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Dropdown } from 'react-bootstrap';
+import Counter from '../Components/Counter';
 
 export default class Product extends Component {
   render() {
@@ -15,14 +15,14 @@ export default class Product extends Component {
           <div className='verticalMenu'>
             <nav className="nav flex-column">
               <p>
-                <a class="btn" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Кнопка рабочая ▼</a>
+                <a className="btn" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Кнопка рабочая ▼</a>
               </p>
-              <div class="row">
-                <div class="col">
-                  <div class="collapse multi-collapse" id="multiCollapseExample1">
-                    <div class="card card-body">
-                    <a className="" href="#">Опрыскиватели</a>
-              <a className="" href="#">Крестовины и карданные валы</a>
+              <div className="row">
+                <div className="col">
+                  <div className="collapse multi-collapse" id="multiCollapseExample1">
+                    <div className="card card-body">
+                      <a className="" href="#">Опрыскиватели</a>
+                      <a className="" href="#">Крестовины и карданные валы</a>
                     </div>
                   </div>
                 </div>
@@ -37,7 +37,7 @@ export default class Product extends Component {
 
           <div className='product'>
             <div className="row">
-              <div className="col col-lg-4 col-md-4  col-md-offset-4 col-xs-4 thumb scale">
+              <div className="col col-lg-4 col-md-4  col-md-offset-4 col-xs-4 thumb">
                 <a href='/product'><img src='tovar.jpg'></img>
                 </a>
               </div>
@@ -47,15 +47,9 @@ export default class Product extends Component {
                 <div className='lineProduct'></div>
                 <p className='price'>25 руб./шт.</p>
                 <p className='availability'>Есть в наличии</p>
-                <div className='count'>
-                  <button onClick={'decrement()'}>-</button>
-                  <h2 id='root'></h2>
-                  <button onClick={'increment()'}>+</button>
-                </div>
-                <button>В корзину</button>
+                <Counter />
                 <p className='availability'>Наши менеджеры обязательно свяжутся с вами и уточнят условия заказа</p>
               </div>
-
             </div>
           </div>
         </div>
