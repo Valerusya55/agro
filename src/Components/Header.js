@@ -57,26 +57,23 @@ export default class Header extends Component {
 									<a href='/search'>Найти</a>
 								</Form>
 							</div>
-							<div className='control-picture'>
-								<a href='/basket'><img src='basket.png' className='basket'></img></a>
-								<a href='/basket'>Корзина</a>
-								<p>0 ₽</p>
+							<div className='basket'>
+								<a href='/basket'><img src='basket.png'></img></a>
+								<div className="basketInfo">
+									<a href="/basket">
+										<span>Корзина: </span>
+										<span>0</span>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 					<Navbar collapseOnSelect expand="md" className='MenuBottom' >
-						<Container>
-							<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-							<Navbar.Collapse id="responsive-navbar-nav">
-								<Nav className="me-auto" >
-									<Nav.Link href="/"> ГЛАВНАЯ </Nav.Link>
-									<Nav.Link href="/about"> О КОМПАНИИ </Nav.Link>
-									<Nav.Link href="/categories"> ПРОДАЖА ЗАПЧАСТЕЙ </Nav.Link>
-									<Nav.Link href="/production"> ИЗГОТОВЛЕНИЕ РВД </Nav.Link>
-									<Nav.Link href="/contacts"> КОНТАКТЫ </Nav.Link>
-								</Nav>
-							</Navbar.Collapse>
-						</Container>
+						<a href="/"> ГЛАВНАЯ </a>
+						<a href="/about"> О КОМПАНИИ </a>
+						<a href="/categories"> ПРОДАЖА ЗАПЧАСТЕЙ </a>
+						<a href="/production"> ИЗГОТОВЛЕНИЕ РВД </a>
+						<a href="/contacts"> КОНТАКТЫ </a>
 					</Navbar>
 				</div>
 				<Router>
