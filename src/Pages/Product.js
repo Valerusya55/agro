@@ -13,28 +13,55 @@ export default class Product extends Component {
         </div>
         <div className='productsMain'>
           <div className='verticalMenu'>
-            <nav className="nav flex-column">
-              <p>
-                <a className="btn" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Кнопка рабочая ▼</a>
-              </p>
-              <div className="row">
-                <div className="col">
-                  <div className="collapse multi-collapse" id="multiCollapseExample1">
-                    <div className="card card-body">
-                      <a className="" href="#">Опрыскиватели</a>
-                      <a className="" href="#">Крестовины и карданные валы</a>
-                    </div>
-                  </div>
-                </div>
+            <a className="btn" data-toggle="collapse" href="#multiCollapseExample1"
+              aria-expanded="false" aria-controls="multiCollapseExample1">Гидравлика ▼</a>
+            <div className="collapse multi-collapse" id="multiCollapseExample1">
+              <div className="card">
+                <a className="" href="#">Опрыскиватели</a>
+                <a className="" href="#">Крестовины и карданные валы</a>
               </div>
-              <a className="" href="#">Опрыскиватели</a>
-              <a className="" href="#">Крестовины и карданные валы</a>
-              <a className="" href="#">Элеваторное оборудование</a>
-              <a className="" href="#">Сельхозмашины</a>
-              <a className="" href="#">Цепи и транспортеры</a>
-            </nav>
+            </div>
+            <a className="btn" data-toggle="collapse" href="#multiCollapseExample2"
+              aria-expanded="false" aria-controls="multiCollapseExample2">Опрыскиватели ▼</a>
+            <div className="collapse multi-collapse" id="multiCollapseExample2">
+              <div className="card">
+                <a className="" href="#">Опрыскиватели</a>
+                <a className="" href="#">Крестовины и карданные валы</a>
+              </div>
+            </div>
+            <a className="btn" data-toggle="collapse" href="#multiCollapseExample3"
+              aria-expanded="false" aria-controls="multiCollapseExample3">Крестовины и карданные валы ▼</a>
+            <div className="collapse multi-collapse" id="multiCollapseExample3">
+              <div className="card">
+                <a className="" href="#">Опрыскиватели</a>
+                <a className="" href="#">Крестовины и карданные валы</a>
+              </div>
+            </div>
+            <a className="btn" data-toggle="collapse" href="#multiCollapseExample4"
+              aria-expanded="false" aria-controls="multiCollapseExample4">Элеваторное оборудование ▼</a>
+            <div className="collapse multi-collapse" id="multiCollapseExample4">
+              <div className="card">
+                <a className="" href="#">Опрыскиватели</a>
+                <a className="" href="#">Крестовины и карданные валы</a>
+              </div>
+            </div>
+            <a className="btn" data-toggle="collapse" href="#multiCollapseExample5"
+              aria-expanded="false" aria-controls="multiCollapseExample5">Сельхозмашины ▼</a>
+            <div className="collapse multi-collapse" id="multiCollapseExample5">
+              <div className="card">
+                <a className="" href="#">Опрыскиватели</a>
+                <a className="" href="#">Крестовины и карданные валы</a>
+              </div>
+            </div>
+            <a className="btn" data-toggle="collapse" href="#multiCollapseExample6"
+              aria-expanded="false" aria-controls="multiCollapseExample6">Цепи и транспортеры ▼</a>
+            <div className="collapse multi-collapse" id="multiCollapseExample6">
+              <div className="card">
+                <a className="" href="#">Опрыскиватели</a>
+                <a className="" href="#">Крестовины и карданные валы</a>
+              </div>
+            </div>
           </div>
-
           <div className='product'>
             <div className="row">
               <div className="col col-lg-4 col-md-4  col-md-offset-4 col-xs-4 thumb">

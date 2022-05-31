@@ -344,17 +344,12 @@ a:hover {
 
 .verticalMenu {
   width: 112%;
+  height: 10%;
   margin-top: 2%;
   text-align: center;
   background-color: #C4C4C4;
-  height: 10%;
   margin-left: 2%;
-}
-
-.verticalMenu .nav a {
-  border: 1px solid #09A725;
-  color: #000000;
-  font-size: 2vh;
+  margin-bottom: 2%;
 }
 
 .topLinks {
@@ -717,4 +712,16 @@ h2 {
 .productBasket p{
   margin-left: 10%;
   font-size: 3vh;
+}
+
+.card{
+  background-color: #ABABAB;
+  width: 100%;
+}
+
+.verticalMenu a {
+  border: 1px solid #09A725;
+  color: #000000;
+  font-size: 2vh;
+  width: 100%;
 }
