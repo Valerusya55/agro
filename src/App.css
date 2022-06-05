@@ -97,7 +97,7 @@ li p {
 
 .MenuBottom a:hover {
   color: #000000 !important;
-  text-decoration:underline;
+  text-decoration: underline;
   font-weight: 500;
   font-size: 2.5vh;
   text-align: center;
@@ -433,6 +433,17 @@ a:hover {
   padding-bottom: 3%;
 }
 
+.thumb h2 {
+  color: #5E5E5E;
+}
+
+.thumb .select {
+  background-color: #C4C4C4;
+  border-radius: 2px;
+  border: 1px solid #09A725;
+  margin-left: 2%;
+}
+
 .modal-content button {
   margin-top: 8%;
   background-color: #09A725;
@@ -461,13 +472,13 @@ a:hover {
 
 .textUser p {
   font-size: 2vh;
-  text-align: center;
   margin-bottom: 2%;
 }
 
 .textUser {
   width: 50%;
   margin-left: 20%;
+  text-align: center;
 }
 
 .order p {
@@ -514,6 +525,32 @@ a:hover {
   margin-top: 3%;
   margin-left: 15%;
   margin-bottom: 2%;
+}
+
+.card{
+  margin-bottom: 2%;
+}
+
+.orderProduct img{
+  width: 20%;
+  margin-left: 2%;
+  border: 1px solid #09A725;
+  border-radius: 3px;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.orderProduct p{
+  font-size: 1vh;
+  margin-top: 1%;
+  margin-left: 1%;
+  font-weight: 500;
+}
+
+.orderProduct a{
+  font-size: 2vh;
+  margin-top: 1%;
+  margin-left: 1%;
 }
 
 .basketProduct h1 {
@@ -593,17 +630,10 @@ h2 {
   width: 30%;
 }
 
-.product .row .article {
-  margin-left: 50%;
-  margin-top: 3%;
-  margin-bottom: 0;
-  color: #6F6F6F;
-}
-
 .product .row .nameProduct {
   font-size: 3vh;
   margin-left: 5%;
-  margin-top: 0;
+  margin-top: 5%;
   color: #6F6F6F;
 }
 
@@ -680,19 +710,6 @@ h2 {
   display: flex;
 }
 
-.productBasket button {
-  background-color: #C4C4C4;
-  border: 1px solid #09A725;
-  width: 20%;
-  font-size: 2.5vh;
-  text-align: center;
-  margin: 0;
-}
-
-.productBasket button:hover {
-  background-color: #6f6f6fbf !important;
-}
-
 .counterBasket {
   width: 30%;
   display: flex;
@@ -725,4 +742,41 @@ h2 {
   color: #000000;
   font-size: 2vh;
   width: 100%;
+}
+
+.rectangleOrder {
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 80%;
+  background-color: #C4C4C4;
+  border: 1px solid #09A725;
+  border-radius: 2px;
+  display: flex;
+}
+
+.card {
+  margin-left: 2%;
+  width: 80%;
+  background-color: #C4C4C4;
+  border: 1px solid #09A725;
+  border-radius: 2px;
+}
+
+.orderInf {
+  width: 33.3%;
+}
+
+.orderInf p {
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+span {
+  color: #5E5E5E;
+  font-weight: bold;
+}
+
+.arrow {
+  margin-right: 1%;
 }

@@ -12,17 +12,51 @@ export default class User extends Component {
                             <p>Имя</p>
                             <p>mail</p>
                             <p>89136987458</p>
-                            <p><ChangeData /></p>
+                            <ChangeData />
                         </div>
                     </div>
-                    <p>
-                        <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Кнопка рабочая</a>
-                    </p>
-                    <div class="row">
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                <div class="card card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    <div className="col-lg-9 col-md-9 col-xs-9 thumb">
+                        <div>
+                            <h2>Заказы</h2>
+                            <select className="select" data-mdb-filter="true">
+                                <option defaultValue>Все</option>
+                                <option value="1">Активные</option>
+                                <option value="2">Завершенные</option>
+                                <option value="3">Отмененные</option>
+                            </select>
+                        </div>
+                        <div className='rectangleOrder' data-toggle="collapse" href="#multiCollapseExample1" role="button"
+                            aria-expanded="false" aria-controls="multiCollapseExample1">
+                            <div className='orderInf'>
+                                <p>Заказ №123 от 25 сентября 2020 </p>
+                                <p><span>Товаров: 2</span></p>
+                            </div>
+                            <div className='orderInf'>
+                                <p>Дата получения:</p>
+                                <p><span>28.09.2020</span></p>
+                            </div>
+                            <div className='orderInf'>
+                                <p>3456, 6 ₽</p>
+                                <p><span>Оплачено</span></p>
+                            </div>
+                            <div className='arrow'><p>▼</p></div>
+                        </div>
+                        <div className="collapse multi-collapse" id="multiCollapseExample1">
+                            <div className="card">
+                                <div className='orderProduct'>
+                                    <div className='productBasket'>
+                                        <img src='tovar.jpg'></img>
+                                        <a href=''>Название товара</a>
+                                        <p>1 шт.</p>
+                                        <p>25 ₽</p>
+                                    </div>
+                                    <div className='lineSearch'></div>
+                                    <div className='productBasket'>
+                                        <img src='tovar.jpg'></img>
+                                        <a href=''>Название товара</a>
+                                        <p>1 шт.</p>
+                                        <p>25 ₽</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

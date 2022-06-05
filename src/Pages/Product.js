@@ -69,7 +69,6 @@ export default class Product extends Component {
                 </a>
               </div>
               <div className="col col-lg-8 col-md-8  col-md-offset-8 col-xs-8 thumb">
-                <p className='article'>Артикул</p>
                 <p className='nameProduct'>Название товара</p>
                 <div className='lineProduct'></div>
                 <p className='price'>25 руб./шт.</p>

@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 export default class Categories extends Component {
   render() {
@@ -9,7 +10,6 @@ export default class Categories extends Component {
             <a href='/subcategories'><img src='tovar.jpg'></img>
               <p>Гидравлика</p>
             </a>
-
           </div>
           <div className="col-lg-4 col-md-4 col-xs-4 thumb scale">
             <a href='/subcategories'><img href="/" src='tovar.jpg'></img>
