@@ -3,7 +3,7 @@ import _isEmpty from 'lodash/isEmpty';
 // TODO: change queryString to object 
 export const makeURL = (relativeURL, queryString) => {
     const URLPrefix = process.env.REACT_APP_API_URL;
-
+console.log(URLPrefix)
     if (_isEmpty(queryString)) {
         return encodeURI(`${URLPrefix}${relativeURL}`)
     }
@@ -16,7 +16,7 @@ export const get = (url, queryString) => {
         geaders: getHeaders(),
     };
     return fetch(url, options)
-        .then(response => checkStatus(response))
+        .then(response => {console.log(response); return checkStatus(response)})
         .then(response => response.json())
         .catch(error => {
             console.log(error);

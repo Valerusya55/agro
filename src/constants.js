@@ -1,3 +1,3 @@
 export const METHODS = {
-    GET_CATEGORIES: '/getCategories',
+    GET_CATEGORIES: '/categories',
 };

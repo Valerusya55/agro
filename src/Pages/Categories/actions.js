@@ -15,8 +15,8 @@ const mockResponse = [
 ];
 
 export const getCategories = () => {
-    // const url = makeURL(METHODS.GET_CATEGORIES);
-    // return get(url);
+    const url = makeURL(METHODS.GET_CATEGORIES);
+    return get(url);
 
-    return Promise.resolve(mockResponse);
+    // return Promise.resolve(mockResponse);
 };

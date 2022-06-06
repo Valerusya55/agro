@@ -34,7 +34,7 @@ export default class Header extends Component {
 							<Autorization />
 							|
 							<Registration />
-						</div>import { Link } from 'react-router-dom';
+						</div>
 					</div>
 					<div className='MenuMiddle'>
 						<div className='leftMenu'>
@@ -71,7 +71,7 @@ export default class Header extends Component {
 					<Navbar collapseOnSelect expand="md" className='MenuBottom' >
 						<a href="/"> ГЛАВНАЯ </a>
 						<a href="/about"> О КОМПАНИИ </a>
-						<Link to="/categories">ПРОДАЖА ЗАПЧАСТЕЙ</Link>
+						<a href="/categories">ПРОДАЖА ЗАПЧАСТЕЙ</a>
 						<a href="/production"> ИЗГОТОВЛЕНИЕ РВД </a>
 						<a href="/contacts"> КОНТАКТЫ </a>
 					</Navbar>
