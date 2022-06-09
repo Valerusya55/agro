@@ -12,8 +12,8 @@ export default class Autorization extends Component {
                             <div className="container mt-4">
                                 <h3>Личный кабинет</h3>
                                 <form>
-                                    <input type="text" className="form-control" name="login" id="login" placeholder="email"></input>
-                                    <input type="password" className="form-control" name="pass" id="pass" placeholder="Пароль"></input>
+                                    <input type="text" className="form-control" name="login_auth" id="login_auth" placeholder="email"></input>
+                                    <input type="password" className="form-control" name="pass_auth" id="pass_auth" placeholder="Пароль" autoComplete="off"></input>
                                     <button>Войти</button>
                                 </form>
                                 <Password />

@@ -17,25 +17,25 @@ export default class Search extends Component {
                     </div>
                 </div>
                 <div className='lineSearch'></div>
-                <h2><a href=''>ТОВАР</a></h2>
+                <h2><a href=''>Подшипник 60317 А, шт</a></h2>
                 <div className='searchProduct'>
                     <a href='/'>Главная</a>-
-                    <a href='/'>Категория</a>-
-                    <a href='/'>Подкатегория</a>
+                    <a href='/'>Прочее</a>-
+                    <a href='/'>Подшипники</a>
                 </div>
                 <div className='lineSearch'></div>
-                <h2><a href=''>ТОВАР</a></h2>
+                <h2><a href=''>Подшипник "Волжский стандарт" 6-7613А, шт</a></h2>
                 <div className='searchProduct'>
                     <a href='/'>Главная</a>-
-                    <a href='/'>Категория</a>-
-                    <a href='/'>Подкатегория</a>
+                    <a href='/'>Прочее</a>-
+                    <a href='/'>Подшипники</a>
                 </div>
                 <div className='lineSearch'></div>
-                <h2><a href=''>ТОВАР</a></h2>
+                <h2><a href=''>Подшипник № 111, шт</a></h2>
                 <div className='searchProduct'>
                     <a href='/'>Главная</a>-
-                    <a href='/'>Категория</a>-
-                    <a href='/'>Подкатегория</a>
+                    <a href='/'>Прочее</a>-
+                    <a href='/'>Подшипники</a>
                 </div>
                 <div className='lineSearch'></div>
             </>

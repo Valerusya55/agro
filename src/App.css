@@ -780,3 +780,12 @@ span {
 .arrow {
   margin-right: 1%;
 }
+
+.successful{
+  height: 150px;
+}
+
+.successful p{
+  margin-top: 10%;
+  font-size: 2.5vh;
+}

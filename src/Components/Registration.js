@@ -11,11 +11,11 @@ export default class Registration extends Component {
                             <div className="container mt-4">
                                 <h3>Регистрация</h3>
                                 <form>
-                                    <input type="text" className="form-control" name="name" id="name" placeholder="Имя"></input>
-                                    <input type="text" className="form-control" name="login" id="login" placeholder="email"></input>
-                                    <input type="password" className="form-control" name="phone" id="phone" placeholder="Номер телефона"></input>
-                                    <input type="password" className="form-control" name="pass" id="pass" placeholder="Пароль"></input>
-                                    <input type="password" className="form-control" name="repeatPass" id="repeatPass" placeholder="Повторите пароль"></input>
+                                    <input type="text" className="form-control" name="name_reg" id="name_reg" placeholder="Имя"></input>
+                                    <input type="text" className="form-control" name="login_reg" id="login_reg" placeholder="email"></input>
+                                    <input type="password" className="form-control" name="phone_reg" id="phone_reg" placeholder="Номер телефона" autoComplete="off"></input>
+                                    <input type="password" className="form-control" name="pass_reg" id="pass_reg" placeholder="Пароль" autoComplete="off"></input>
+                                    <input type="password" className="form-control" name="repeatPass_reg" id="repeatPass_reg" placeholder="Повторите пароль" autoComplete="off"></input>
                                     <button>Зарегистрироваться</button>
                                 </form>
                             </div>

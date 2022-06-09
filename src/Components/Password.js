@@ -11,9 +11,9 @@ export default class Password extends Component {
                             <div className="container mt-4">
                                 <h3>Восстановить пароль</h3>
                                 <form>
-                                    <input type="text" className="form-control" name="login" id="login" placeholder="email"></input>
-                                    <input type="password" className="form-control" name="pass" id="pass" placeholder="Введите новый пароль"></input>
-                                    <input type="password" className="form-control" name="pass" id="pass" placeholder="Повторите пароль"></input>
+                                    <input type="text" className="form-control" name="login_pass" id="login_pass" placeholder="email"></input>
+                                    <input type="password" className="form-control" name="pass" id="pass" placeholder="Введите новый пароль" autoComplete="off"></input>
+                                    <input type="password" className="form-control" name="repeatPass" id="repeatPass" placeholder="Повторите пароль" autoComplete="off"></input>
                                         <button>Восстановить пароль</button>
                                 </form>
                             </div>

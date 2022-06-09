@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ChangeData from '../Components/ChangeData'
+import SuccessfulRegistration from '../Components/SuccessfulRegistration'
 
 export default class User extends Component {
     render() {

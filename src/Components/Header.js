@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, FormControl, Container, Form } from 'react-bootstrap';
 import logo from './logo.png';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Main from '../Pages/Main';
 import About from '../Pages/About';
 import Categories from '../Pages/Categories';
@@ -71,7 +71,7 @@ export default class Header extends Component {
 					<Navbar collapseOnSelect expand="md" className='MenuBottom' >
 						<a href="/"> ГЛАВНАЯ </a>
 						<a href="/about"> О КОМПАНИИ </a>
-						<a href="/categories"> ПРОДАЖА ЗАПЧАСТЕЙ </a>
+						<a href="/categories">ПРОДАЖА ЗАПЧАСТЕЙ</a>
 						<a href="/production"> ИЗГОТОВЛЕНИЕ РВД </a>
 						<a href="/contacts"> КОНТАКТЫ </a>
 					</Navbar>
@@ -80,7 +80,7 @@ export default class Header extends Component {
 					<Routes>
 						<Route exact path={"/"} element={< Main />} />
 						<Route exact path={"/about"} element={< About />} />
-						<Route exact path={"/categories"} element={< Categories />} />
+						<Route exact path={"/categories"} element={<Categories />} />
 						<Route exact path={"/production"} element={< Production />} />
 						<Route exact path={"/contacts"} element={< Contacts />} />
 						<Route exact path={"/subcategories"} element={< Subcategories />} />
