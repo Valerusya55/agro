@@ -4,7 +4,7 @@ export default class Registration extends Component {
     render() {
         return (
             <>
-                <a type="button" data-toggle="modal" data-target="#myModal"  >Регистрация</a>
+                <a type="button" data-toggle="modal" data-target="#myModal">Регистрация</a>
                 <div id="myModal" className="modal fade bd-example-modal-md" tabIndex="-1" role="dialog" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content">

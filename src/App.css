@@ -75,6 +75,11 @@ li p {
   width: 100%;
   height: 47px;
   top: 17%;
+  z-index: 100;
+}
+
+.burgerMenu {
+  background-color: #09A725;
 }
 
 .header {
@@ -238,21 +243,22 @@ a:hover {
 
 .basket {
   float: right;
-  height: 100px;
   width: 40%;
   font-size: 130%;
 }
 
 .basket img {
-  width: 10%;
+  width: 5vh;
   margin-top: 8%;
   margin-left: 45%;
   display: inline-block;
 }
 
 .basketInfo {
-  display: inline-block;
+  float: right;
   font-size: 2.5vh;
+  margin-top: 5%;
+  margin-right: 20%;
 }
 
 .control {
@@ -421,11 +427,11 @@ a:hover {
   margin-bottom: 7%;
 }
 
-.modal-content a :hover {
+.modal-content a:hover {
   font-weight: bold;
 }
 
-.modal-content a :active {
+.modal-content a:active {
   font-weight: bold;
 }
 
@@ -458,6 +464,7 @@ a:hover {
 
 .modal-content button:hover {
   background-color: #007915 !important;
+  font-weight: bold;
 }
 
 .personalData img {
@@ -527,11 +534,11 @@ a:hover {
   margin-bottom: 2%;
 }
 
-.card{
+.card {
   margin-bottom: 2%;
 }
 
-.orderProduct img{
+.orderProduct img {
   width: 20%;
   margin-left: 2%;
   border: 1px solid #09A725;
@@ -540,14 +547,14 @@ a:hover {
   margin-top: 1%;
 }
 
-.orderProduct p{
+.orderProduct p {
   font-size: 1vh;
   margin-top: 1%;
   margin-left: 1%;
   font-weight: 500;
 }
 
-.orderProduct a{
+.orderProduct a {
   font-size: 2vh;
   margin-top: 1%;
   margin-left: 1%;
@@ -781,11 +788,11 @@ span {
   margin-right: 1%;
 }
 
-.successful{
+.successful {
   height: 150px;
 }
 
-.successful p{
+.successful p {
   margin-top: 10%;
   font-size: 2.5vh;
 }
