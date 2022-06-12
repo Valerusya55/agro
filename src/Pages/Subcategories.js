@@ -10,7 +10,7 @@ export default class Subcategories extends Component {
   }
 
   componentDidMount() {
-    getCategoryById().then(response => {
+    getCategoryById(this.state.subcategories.map(subcategory => (subcategory.category.id))).then(response => {
       this.setState({ subcategories: response.subcategories });
     })
   }
