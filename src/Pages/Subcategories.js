@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { getCategoriesById } from './Categories/actions';
+import { getCategoryById } from './Categories/actions';
 
 export default class Subcategories extends Component {
   constructor(props) {
@@ -10,7 +10,7 @@ export default class Subcategories extends Component {
   }
 
   componentDidMount() {
-    getCategoriesById().then(response => {
+    getCategoryById().then(response => {
       this.setState({ subcategories: response.subcategories });
     })
   }
