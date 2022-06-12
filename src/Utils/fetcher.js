@@ -13,7 +13,7 @@ console.log(URLPrefix)
 export const get = (url, queryString) => {
     const options = {
         method: 'GET',
-        mode: "cors",
+        mode: 'cors',
         geaders: getHeaders(),
     };
     return fetch(url, options)

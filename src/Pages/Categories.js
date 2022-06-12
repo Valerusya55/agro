@@ -10,20 +10,19 @@ export default class Categories extends Component {
   }
 
   componentDidMount() {
-    getCategories().then((response) => {
-      this.setState({ categories: response.сategories });
+    getCategories().then(res => {
+      console.log(res.categories);
+      this.setState({ categories: res.categories });
     })
   }
 
   getCategoryList = () => {
-    return this.state.categories.map((category) => (
-      <div className="row gy-5">
-        <div className="col-lg-4 col-md-4 col-xs-4 thumb scale">
-          <a href={`/${category.id}/subcategories`}>
-            <img src={category.imgURL} alt={category.name}></img>
-            <p>{category.name}</p>
-          </a>
-        </div>
+    return this.state.categories.map(category => (
+      <div className="col-lg-4 col-md-4 col-xs-4 thumb scale">
+        <a href={`/${category.id}/subcategories`}>
+          <img src={category.imgURL} alt={category.name}></img>
+          <p>{category.name}</p>
+        </a>
       </div>
     ));
   };
@@ -31,7 +30,9 @@ export default class Categories extends Component {
   render() {
     return (
       <div className='catalog'>
-        {this.getCategoryList()}
+        <div className="row gy-5">
+          {this.getCategoryList()}
+        </div>
       </div>
     );
   }
