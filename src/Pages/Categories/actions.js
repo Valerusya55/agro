@@ -4,6 +4,9 @@ import {METHODS} from '../../constants';
 export const getCategories = () => {
     const url = makeURL(METHODS.GET_CATEGORIES);
     return get(url);
-
-    // return Promise.resolve(mockResponse);
 };
+
+export const getCategoriesById = () => {
+    const url = makeURL(METHODS.GET_CATEGORIES_BY_CATEGORY_ID);
+    return get(url);
+}

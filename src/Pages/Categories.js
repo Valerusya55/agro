@@ -10,16 +10,15 @@ export default class Categories extends Component {
   }
 
   componentDidMount() {
-    getCategories().then(res => {
-      console.log(res.categories);
-      this.setState({ categories: res.categories });
+    getCategories().then(response => {
+      this.setState({ categories: response.categories });
     })
   }
 
   getCategoryList = () => {
     return this.state.categories.map(category => (
       <div className="col-lg-4 col-md-4 col-xs-4 thumb scale">
-        <a href={`/${category.id}/subcategories`}>
+        <a href={`categories/${category.name}/subcategories`}>
           <img src={category.imgURL} alt={category.name}></img>
           <p>{category.name}</p>
         </a>
