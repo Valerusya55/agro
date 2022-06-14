@@ -86,12 +86,12 @@ export default class Header extends Component {
 						<Route exact path={"/categories"} element={<Categories />} />
 						<Route exact path={"/production"} element={< Production />} />
 						<Route exact path={"/contacts"} element={< Contacts />} />
-						<Route exact path={"/subcategories"} element={< Subcategories />} />
 						<Route exact path={"/products"} element={< Products />} />
 						<Route exact path={"/product"} element={< Product />} />
 						<Route exact path={"/user"} element={< User />} />
 						<Route exact path={"/search"} element={< Search />} />
 						<Route exact path={"/basket"} element={< Basket />} />
+						<Route path={"categories/:idCategory/subcategories"} element={<Subcategories />} />
 					</Routes>
 				</Router>
 			</>

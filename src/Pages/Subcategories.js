@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { getCategoryById } from './Categories/actions';
+import { useParams } from 'react-router-dom';
 
-export default class Subcategories extends Component {
+
+class Subcategories extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -10,7 +12,7 @@ export default class Subcategories extends Component {
   }
 
   componentDidMount() {
-    getCategoryById(this.state.subcategories.map(subcategory => (subcategory.category.id))).then(response => {
+    getCategoryById(this.props.params.idCategory).then(response => {
       this.setState({ subcategories: response.subcategories });
     })
   }
@@ -18,7 +20,7 @@ export default class Subcategories extends Component {
   getSubcategoryList = () => {
     return this.state.subcategories.map(subcategory => (
       <div className="col-lg-4 col-md-4 col-xs-4 thumb scale">
-        <a href={`categories/${subcategory.category.name}/${subcategory.name}`}>
+        <a href={`categories/${subcategory.category.id}/${subcategory.name}`}>
           <img src={subcategory.imgURL} alt={subcategory.name}></img>
           <p>{subcategory.name}</p>
         </a>
@@ -36,3 +38,9 @@ export default class Subcategories extends Component {
     );
   }
 }
+export default (props) => (
+  <Subcategories
+    {...props}
+    params={useParams()}
+  />
+);

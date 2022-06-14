@@ -18,7 +18,7 @@ export default class Categories extends Component {
   getCategoryList = () => {
     return this.state.categories.map(category => (
       <div className="col-lg-4 col-md-4 col-xs-4 thumb scale">
-        <a href={`categories/${category.name}/subcategories`}>
+        <a href={`categories/${category.id}/subcategories` }>
           <img src={category.imgURL} alt={category.name}></img>
           <p>{category.name}</p>
         </a>
