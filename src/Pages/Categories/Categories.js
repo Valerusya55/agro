@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
-import { getCategories } from './Categories/actions';
+import { getCategories } from './actions';
+import {Link} from "react-router-dom";
 
 export default class Categories extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      categories: []
+      show: false,
+      categoryId: null,
+      categories: [],
     };
   }
 
@@ -15,13 +18,20 @@ export default class Categories extends Component {
     })
   }
 
+  showSubcategories = (id)=> {
+    this.setState({show: true, categoryId: id});
+  }
+
+
   getCategoryList = () => {
     return this.state.categories.map(category => (
-      <div className="col-lg-4 col-md-4 col-xs-4 thumb scale">
-        <a href={`categories/${category.name}/subcategories`}>
-          <img src={category.imgURL} alt={category.name}></img>
+      <div className="col-lg-4 col-md-4 col-xs-4 thumb scale" key={category.id}
+           onClick={() => this.showSubcategories(category.id)}
+      >
+        <Link to={category.id}>
+         <img src={category.imgURL} alt={category.name}></img>
           <p>{category.name}</p>
-        </a>
+           </Link>
       </div>
     ));
   };

@@ -8,58 +8,58 @@ export default class Products extends Component {
             <>
                 <div className='topLinks'>
                     <p>НАЗВАНИЕ ВЫБРАННОЙ КАТЕГОРИИ</p>
-                    <a href='/'>Главная</a>-
-                    <a href='/'>Категория</a>-
-                    <a href='/'>Подкатегория</a>
+                    <a href='/public'>Главная</a>-
+                    <a href='/public'>Категория</a>-
+                    <a href='/public'>Подкатегория</a>
                 </div>
                 <div className='productsMain'>
                     <div className='verticalMenu'>
-                        <a className="btn" data-toggle="collapse" href="#multiCollapseExample1"
+                        <a className="btn" data-toggle="collapse" href="src/Pages/Products/Products#multiCollapseExample1"
                             aria-expanded="false" aria-controls="multiCollapseExample1">Гидравлика ▼</a>
                         <div className="collapse multi-collapse" id="multiCollapseExample1">
                             <div className="card">
-                                <a className="" href="#">Опрыскиватели</a>
-                                <a className="" href="#">Крестовины и карданные валы</a>
+                                <a className="" href="src/Pages/Products/Products#">Опрыскиватели</a>
+                                <a className="" href="src/Pages/Products/Products#">Крестовины и карданные валы</a>
                             </div>
                         </div>
-                        <a className="btn" data-toggle="collapse" href="#multiCollapseExample2"
+                        <a className="btn" data-toggle="collapse" href="src/Pages/Products/Products#multiCollapseExample2"
                             aria-expanded="false" aria-controls="multiCollapseExample2">Опрыскиватели ▼</a>
                         <div className="collapse multi-collapse" id="multiCollapseExample2">
                             <div className="card">
-                                <a className="" href="#">Опрыскиватели</a>
-                                <a className="" href="#">Крестовины и карданные валы</a>
+                                <a className="" href="src/Pages/Products/Products#">Опрыскиватели</a>
+                                <a className="" href="src/Pages/Products/Products#">Крестовины и карданные валы</a>
                             </div>
                         </div>
-                        <a className="btn" data-toggle="collapse" href="#multiCollapseExample3"
+                        <a className="btn" data-toggle="collapse" href="src/Pages/Products/Products#multiCollapseExample3"
                             aria-expanded="false" aria-controls="multiCollapseExample3">Крестовины и карданные валы ▼</a>
                         <div className="collapse multi-collapse" id="multiCollapseExample3">
                             <div className="card">
-                                <a className="" href="#">Опрыскиватели</a>
-                                <a className="" href="#">Крестовины и карданные валы</a>
+                                <a className="" href="src/Pages/Products/Products#">Опрыскиватели</a>
+                                <a className="" href="src/Pages/Products/Products#">Крестовины и карданные валы</a>
                             </div>
                         </div>
-                        <a className="btn" data-toggle="collapse" href="#multiCollapseExample4"
+                        <a className="btn" data-toggle="collapse" href="src/Pages/Products/Products#multiCollapseExample4"
                             aria-expanded="false" aria-controls="multiCollapseExample4">Элеваторное оборудование ▼</a>
                         <div className="collapse multi-collapse" id="multiCollapseExample4">
                             <div className="card">
-                                <a className="" href="#">Опрыскиватели</a>
-                                <a className="" href="#">Крестовины и карданные валы</a>
+                                <a className="" href="src/Pages/Products/Products#">Опрыскиватели</a>
+                                <a className="" href="src/Pages/Products/Products#">Крестовины и карданные валы</a>
                             </div>
                         </div>
-                        <a className="btn" data-toggle="collapse" href="#multiCollapseExample5"
+                        <a className="btn" data-toggle="collapse" href="src/Pages/Products/Products#multiCollapseExample5"
                             aria-expanded="false" aria-controls="multiCollapseExample5">Сельхозмашины ▼</a>
                         <div className="collapse multi-collapse" id="multiCollapseExample5">
                             <div className="card">
-                                <a className="" href="#">Опрыскиватели</a>
-                                <a className="" href="#">Крестовины и карданные валы</a>
+                                <a className="" href="src/Pages/Products/Products#">Опрыскиватели</a>
+                                <a className="" href="src/Pages/Products/Products#">Крестовины и карданные валы</a>
                             </div>
                         </div>
-                        <a className="btn" data-toggle="collapse" href="#multiCollapseExample6"
+                        <a className="btn" data-toggle="collapse" href="src/Pages/Products/Products#multiCollapseExample6"
                             aria-expanded="false" aria-controls="multiCollapseExample6">Цепи и транспортеры ▼</a>
                         <div className="collapse multi-collapse" id="multiCollapseExample6">
                             <div className="card">
-                                <a className="" href="#">Опрыскиватели</a>
-                                <a className="" href="#">Крестовины и карданные валы</a>
+                                <a className="" href="src/Pages/Products/Products#">Опрыскиватели</a>
+                                <a className="" href="src/Pages/Products/Products#">Крестовины и карданные валы</a>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ export default class Products extends Component {
                                 <option value="3">1600-3200</option>
                                 <option value="4">3200-6400</option>
                             </select>
-                            <a href=''>По алфавиту</a>
+                            <a href='src/Pages/Products/Products'>По алфавиту</a>
                         </div>
                         <div className="row">
                             <div className="col col-lg-1 col-md-1  col-md-offset-1 col-xs-1 thumb scale">

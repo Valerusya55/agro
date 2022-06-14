@@ -3,8 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import './App.css';
-import PostList from './Components/PostList';
-import About from './Pages/About';
+// import PostList from './Components/PostList';
 
 function App() {
   return (

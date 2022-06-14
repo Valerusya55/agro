@@ -17,25 +17,25 @@ export default class Search extends Component {
                     </div>
                 </div>
                 <div className='lineSearch'></div>
-                <h2><a href=''>Подшипник 60317 А, шт</a></h2>
+                <h2><a href='src/Pages/Search'>Подшипник 60317 А, шт</a></h2>
                 <div className='searchProduct'>
-                    <a href='/'>Главная</a>-
-                    <a href='/'>Прочее</a>-
-                    <a href='/'>Подшипники</a>
+                    <a href='/public'>Главная</a>-
+                    <a href='/public'>Прочее</a>-
+                    <a href='/public'>Подшипники</a>
                 </div>
                 <div className='lineSearch'></div>
-                <h2><a href=''>Подшипник "Волжский стандарт" 6-7613А, шт</a></h2>
+                <h2><a href='src/Pages/Search'>Подшипник "Волжский стандарт" 6-7613А, шт</a></h2>
                 <div className='searchProduct'>
-                    <a href='/'>Главная</a>-
-                    <a href='/'>Прочее</a>-
-                    <a href='/'>Подшипники</a>
+                    <a href='/public'>Главная</a>-
+                    <a href='/public'>Прочее</a>-
+                    <a href='/public'>Подшипники</a>
                 </div>
                 <div className='lineSearch'></div>
-                <h2><a href=''>Подшипник № 111, шт</a></h2>
+                <h2><a href='src/Pages/Search'>Подшипник № 111, шт</a></h2>
                 <div className='searchProduct'>
-                    <a href='/'>Главная</a>-
-                    <a href='/'>Прочее</a>-
-                    <a href='/'>Подшипники</a>
+                    <a href='/public'>Главная</a>-
+                    <a href='/public'>Прочее</a>-
+                    <a href='/public'>Подшипники</a>
                 </div>
                 <div className='lineSearch'></div>
             </>

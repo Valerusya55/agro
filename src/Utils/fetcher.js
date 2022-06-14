@@ -3,10 +3,10 @@ import _isEmpty from 'lodash/isEmpty';
 // TODO: change queryString to object 
 export const makeURL = (relativeURL, queryString) => {
     const URLPrefix = process.env.REACT_APP_API_URL;
-console.log(URLPrefix)
     if (_isEmpty(queryString)) {
         return encodeURI(`${URLPrefix}${relativeURL}`)
     }
+console.log(`${URLPrefix}${relativeURL}?${queryString}`);
     return encodeURI(`${URLPrefix}${relativeURL}?${queryString}`);
 };
 

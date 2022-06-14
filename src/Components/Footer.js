@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Contacts from '../Pages/Contacts'
+import Contacts from '../Pages/Static/Contacts'
 
 export default class Footerooter extends Component {
     render() {

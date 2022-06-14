@@ -2,19 +2,20 @@ import React, { Component } from 'react';
 import { Navbar, Nav, FormControl, Container, Form } from 'react-bootstrap';
 import logo from './logo.png';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Main from '../Pages/Main';
-import About from '../Pages/About';
-import Categories from '../Pages/Categories';
-import Production from '../Pages/Production';
-import Contacts from '../Pages/Contacts';
-import Subcategories from '../Pages/Subcategories';
-import Products from '../Pages/Products';
-import Product from '../Pages/Product';
+import Main from '../Pages/Static/Main';
+import About from '../Pages/Static/About';
+import Categories from '../Pages/Categories/Categories';
+import Production from '../Pages/Static/Production';
+import Contacts from '../Pages/Static/Contacts';
+import Subcategories from '../Pages/Subcategories/Subcategories';
+import Products from '../Pages/Products/Products';
+import Product from '../Pages/Product/Product';
 import Registration from './Registration';
 import Autorization from './Autorization';
 import User from '../Pages/User';
 import Search from '../Pages/Search';
 import Basket from '../Pages/Basket';
+import withParams from "../HOCs/withParams";
 
 
 export default class Header extends Component {
@@ -83,17 +84,20 @@ export default class Header extends Component {
 					<Routes>
 						<Route exact path={"/"} element={< Main />} />
 						<Route exact path={"/about"} element={< About />} />
-						<Route exact path={"/categories"} element={<Categories />} />
 						<Route exact path={"/production"} element={< Production />} />
 						<Route exact path={"/contacts"} element={< Contacts />} />
-						<Route exact path={"/subcategories"} element={< Subcategories />} />
-						<Route exact path={"/products"} element={< Products />} />
-						<Route exact path={"/product"} element={< Product />} />
 						<Route exact path={"/user"} element={< User />} />
 						<Route exact path={"/search"} element={< Search />} />
 						<Route exact path={"/basket"} element={< Basket />} />
+						<Route path={"/categories"} element={< Categories />} />
+						<Route path={"/categories/:categoryId"} element={withParams(Subcategories)} />
+						<Route path={"/categories/:categoryId/subcategories"} element={< Subcategories />} />
+						<Route path={"/categories/:categoryId/subcategories/:subcategoryId"} element={< Products />} />
+						<Route path={"/categories/:categoryId/subcategories/:subcategoryId/products"} element={< Products />} />
+						<Route path={"/categories/:categoryId/subcategories/:subcategoryId/:productId"} element={< Product />} />
+						<Route path={"/products/:productId"} element={< Product />} />
 					</Routes>
-				</Router>
+			</Router>
 			</>
 		)
 	}

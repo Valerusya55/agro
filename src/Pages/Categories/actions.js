@@ -6,7 +6,7 @@ export const getCategories = () => {
     return get(url);
 };
 
-export const getCategoryById = (idCategory) => {
-    const url = makeURL(METHODS.GET_CATEGORIES) + idCategory;
+export const getCategoryById = (id) => {
+    const url = makeURL(METHODS.GET_CATEGORIES + id);
     return get(url);
 }
