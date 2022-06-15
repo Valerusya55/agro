@@ -1,8 +1,34 @@
 import React, { Component } from 'react';
-import { Dropdown } from 'react-bootstrap';
+import { getSubcategoryById } from './Categories/actions';
+import { useParams } from 'react-router-dom';
 
 
-export default class Products extends Component {
+
+class Products extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            products: []
+        };
+    }
+
+    componentDidMount() {
+        console.log(this.props);
+        getSubcategoryById(this.props.params.idCategory, this.props.params.idSubcategory).then(response => {
+            this.setState({ products: response.products });
+        })
+    }
+
+    getProductList = () => {
+        return this.state.products.map(product => (
+            <div className="col col-lg-1 col-md-1  col-md-offset-1 col-xs-1 thumb scale">
+                <a href={`categories/${product.subcategory.category.id}/${product.subcategory.id}/${product.name}`}>
+                    <img src={product.imgURL}></img>
+                    <p>{product.name}</p>
+                </a>
+            </div>
+        ));
+    };
     render() {
         return (
             <>
@@ -65,7 +91,7 @@ export default class Products extends Component {
                     </div>
                     <div className='products'>
                         <div className="rowFiltr">
-                            <img src='filtr.png'></img>
+                            <img src={require('../assets/filtr.png')}></img>
                             <select className="select" data-mdb-filter="true">
                                 <option defaultValue>Цена</option>
                                 <option value="1">400-800</option>
@@ -76,58 +102,7 @@ export default class Products extends Component {
                             <a href=''>По алфавиту</a>
                         </div>
                         <div className="row">
-                            <div className="col col-lg-1 col-md-1  col-md-offset-1 col-xs-1 thumb scale">
-                                <a href='/product'><img src='tovar.jpg'></img>
-                                    <p>Товар</p>
-                                </a>
-                            </div>
-                            <div className=" col col-lg-1 col-md-1 col-xs-1 thumb scale">
-                                <a href='/product'><img src='tovar.jpg'></img>
-                                    <p>Товар</p>
-                                </a>
-                            </div>
-                            <div className="col col-lg-1 col-md-1 col-xs-1 thumb scale">
-                                <a href='/product'><img src='tovar.jpg'></img>
-                                    <p>Товар</p>
-                                </a>
-                            </div>
-                            <div className="col col-lg-1 col-md-1 col-xs-1 thumb scale">
-                                <a href='/product'><img src='tovar.jpg'></img>
-                                    <p>Товар</p>
-                                </a>
-                            </div>
-                            <div className="col col-lg-1 col-md-1 col-xs-1 thumb scale">
-                                <a href='/product'><img src='tovar.jpg'></img>
-                                    <p>Товар</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col col-lg-1 col-md-1 col-xs-1 thumb scale">
-                                <a href='/product'><img src='tovar.jpg'></img>
-                                    <p>Товар</p>
-                                </a>
-                            </div>
-                            <div className="col col-lg-1 col-md-1 col-xs-1 thumb scale">
-                                <a href='/product'><img src='tovar.jpg'></img>
-                                    <p>Товар</p>
-                                </a>
-                            </div>
-                            <div className="col col-lg-1 col-md-1 col-xs-1 thumb scale">
-                                <a href='/product'><img src='tovar.jpg'></img>
-                                    <p>Товар</p>
-                                </a>
-                            </div>
-                            <div className="col col-lg-1 col-md-1 col-xs-1 thumb scale">
-                                <a href='/product'><img src='tovar.jpg'></img>
-                                    <p>Товар</p>
-                                </a>
-                            </div>
-                            <div className=" col col-lg-1 col-md-1 col-xs-1 thumb scale">
-                                <a href='/product'><img src='tovar.jpg'></img>
-                                    <p>Товар</p>
-                                </a>
-                            </div>
+                            {this.getProductList()}
                         </div>
                     </div>
                 </div>
@@ -135,3 +110,9 @@ export default class Products extends Component {
         )
     }
 }
+export default (props) => (
+    <Products
+        {...props}
+        params={useParams()}
+    />
+);
