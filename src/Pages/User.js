@@ -43,8 +43,9 @@ export default class User extends Component {
                             <div className='arrow'><p>▼</p></div>
                         </div>
                         <div className="collapse multi-collapse" id="multiCollapseExample1">
+                        <div className='orderProduct'>
                             <div className="card">
-                                <div className='orderProduct'>
+                            
                                     <div className='productBasket'>
                                         <img src='tovar.jpg'></img>
                                         <a href=''>Название товара</a>

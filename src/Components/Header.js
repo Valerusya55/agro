@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, FormControl, Container, Form } from 'react-bootstrap';
+import { Navbar, Nav, FormControl, Form } from 'react-bootstrap';
 import logo from './logo.png';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from '../Pages/Main';
 import About from '../Pages/About';
 import Categories from '../Pages/Categories';
@@ -15,7 +15,10 @@ import Autorization from './Autorization';
 import User from '../Pages/User';
 import Search from '../Pages/Search';
 import Basket from '../Pages/Basket';
-
+import phone from '../assets/phone.png';
+import mail from '../assets/mail.png';
+import user from '../assets/user.png';
+import basket from '../assets/basket.png';
 
 export default class Header extends Component {
 	render() {
@@ -24,13 +27,13 @@ export default class Header extends Component {
 				<div className='header'>
 					<div className='MenuTop'>
 						<div className='one'>
-							<img className='headerImage' src='phone.png'></img>
+							<img className='headerImage' src={phone}></img>
 							<a href="tel:+73812551381">+7(3812)55‒13‒81</a>
-							<img className='headerImage' src='mail.png'></img>
+							<img className='headerImage' src={mail}></img>
 							<a href="mailto:agrozapchast55@mail.ru">agrozapchast55@mail.ru</a>
 						</div>
 						<div className='two'>
-							<img className='headerImage' src='user.png'></img>
+							<img className='headerImage' src={user}></img>
 							<Autorization />
 							|
 							<Registration />
@@ -58,7 +61,7 @@ export default class Header extends Component {
 								</Form>
 							</div>
 							<div className='basket'>
-								<a href='/basket'><img src='basket.png'></img></a>
+								<a href='/basket'><img src={basket}></img></a>
 								<div className="basketInfo">
 									<a href="/basket">
 										<span>Корзина: </span>

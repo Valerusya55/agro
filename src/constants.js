@@ -1,4 +1,4 @@
 export const METHODS = {
     GET_CATEGORIES: 'categories/',
-    //GET_CATEGORY_BY_ID: 'categories/',
+    GET_SUBCATEGORY_BY_ID: 'subcategories/',
 };

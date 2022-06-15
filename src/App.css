@@ -534,10 +534,6 @@ a:hover {
   margin-bottom: 2%;
 }
 
-.card {
-  margin-bottom: 2%;
-}
-
 .orderProduct img {
   width: 20%;
   margin-left: 2%;
@@ -558,6 +554,11 @@ a:hover {
   font-size: 2vh;
   margin-top: 1%;
   margin-left: 1%;
+}
+
+.orderProduct{
+  width: 80%;
+  margin-left: 2%;
 }
 
 .basketProduct h1 {
@@ -739,11 +740,6 @@ h2 {
   font-size: 3vh;
 }
 
-.card {
-  background-color: #ABABAB;
-  width: 100%;
-}
-
 .verticalMenu a {
   border: 1px solid #09A725;
   color: #000000;
@@ -762,11 +758,10 @@ h2 {
 }
 
 .card {
-  margin-left: 2%;
-  width: 80%;
   background-color: #C4C4C4;
   border: 1px solid #09A725;
   border-radius: 2px;
+  margin-bottom: 2%;
 }
 
 .orderInf {
