@@ -28,13 +28,26 @@ class Subcategories extends Component {
     ));
   };
 
+  getTopLinks = () => {
+    return (
+      <div className='topLinks'>
+        <a href='/categories'>Каталог</a>-
+        <a href={`/categories/${this.state.subcategories[0] && this.state.subcategories[0].category.id}/subcategories/`}>
+          {this.state.subcategories[0] && this.state.subcategories[0].category.name}</a>
+      </div>
+    )
+  };
+
   render() {
     return (
-      <div className='catalog'>
-        <div className="row gy-5">
-          {this.getSubcategoryList()}
+      <>
+        {this.getTopLinks()}
+        <div className='catalog'>
+          <div className="row gy-5">
+            {this.getSubcategoryList()}
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 }

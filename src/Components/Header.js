@@ -72,14 +72,14 @@ export default class Header extends Component {
 						</div>
 					</div>
 					<Navbar collapseOnSelect expand="md" className='MenuBottom'>
-							<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-							<Navbar.Collapse id="responsive-navbar-nav" className='burgerMenu'>
-								<Nav.Link href="/"> ГЛАВНАЯ </Nav.Link>
-								<Nav.Link href="/about"> О КОМПАНИИ </Nav.Link>
-								<Nav.Link href="/categories"> ПРОДАЖА ЗАПЧАСТЕЙ </Nav.Link>
-								<Nav.Link href="/production"> ИЗГОТОВЛЕНИЕ РВД </Nav.Link>
-								<Nav.Link href="/contacts"> КОНТАКТЫ </Nav.Link>
-							</Navbar.Collapse>
+						<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+						<Navbar.Collapse id="responsive-navbar-nav" className='burgerMenu'>
+							<Nav.Link href="/"> ГЛАВНАЯ </Nav.Link>
+							<Nav.Link href="/about"> О КОМПАНИИ </Nav.Link>
+							<Nav.Link href="/categories"> ПРОДАЖА ЗАПЧАСТЕЙ </Nav.Link>
+							<Nav.Link href="/production"> ИЗГОТОВЛЕНИЕ РВД </Nav.Link>
+							<Nav.Link href="/contacts"> КОНТАКТЫ </Nav.Link>
+						</Navbar.Collapse>
 					</Navbar>
 				</div>
 				<Router>
