@@ -20,7 +20,7 @@ class Subcategories extends Component {
   getSubcategoryList = () => {
     return this.state.subcategories.map(subcategory => (
       <div className="col-lg-4 col-md-4 col-xs-4 thumb scale">
-        <a href={`/categories/${subcategory.category.id}/subcategories/${subcategory.id}`}>
+        <a href={`/categories/${subcategory.category.id}/subcategories/${subcategory.id}/products`}>
           <img src={subcategory.imgURL} alt={subcategory.name}></img>
           <p>{subcategory.name}</p>
         </a>

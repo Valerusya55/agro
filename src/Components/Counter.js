@@ -21,9 +21,9 @@ function Counter() {
 
   return (
     <div className='counter'>
-      <Btn onClick={handleIncrement}>+</Btn>
-      <span className='textCounter'>{counter}</span>
       <Btn onClick={handleDecrement}>-</Btn>
+      <span className='textCounter'>{counter}</span>
+      <Btn onClick={handleIncrement}>+</Btn>
       <button className='btnBasket'>В корзину</button>
     </div>
   );

@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { getSubcategoryById } from './Categories/actions';
 import { useParams } from 'react-router-dom';
 
-
-
 class Products extends Component {
     constructor(props) {
         super(props);
@@ -13,7 +11,6 @@ class Products extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props);
         getSubcategoryById(this.props.params.idCategory, this.props.params.idSubcategory).then(response => {
             this.setState({ products: response.products });
         })
@@ -21,23 +18,34 @@ class Products extends Component {
 
     getProductList = () => {
         return this.state.products.map(product => (
-            <div className="col col-lg-1 col-md-1  col-md-offset-1 col-xs-1 thumb scale">
-                <a href={`categories/${product.subcategory.category.id}/${product.subcategory.id}/${product.name}`}>
+            <div className="col col-lg-2 col-md-2  col-md-offset-2 col-xs-2 thumb scale">
+                <a href={`/categories/${product.subcategory.category.id}/subcategories/${product.subcategory.id}/products/${product.id}`}>
                     <img src={product.imgURL}></img>
                     <p>{product.name}</p>
                 </a>
             </div>
+
         ));
     };
+
+    getTopLinks = () => {
+        return (
+            <div className='topLinks'>
+                <p>{this.state.products[0] && this.state.products[0].subcategory.name}</p>
+                <a href='/categories'>Каталог</a>-
+                <a href={`/categories/${this.state.products[0] && this.state.products[0].subcategory.category.id}/subcategories/`}>
+                    {this.state.products[0] && this.state.products[0].subcategory.category.name}</a>-
+                <a href={`/categories/${this.state.products[0] && this.state.products[0].subcategory.category.id}/subcategories/
+                ${this.state.products[0] && this.state.products[0].subcategory.id}/products`}>
+                    {this.state.products[0] && this.state.products[0].subcategory.name}</a>
+            </div>
+        )
+    };
+    
     render() {
         return (
             <>
-                <div className='topLinks'>
-                    <p>НАЗВАНИЕ ВЫБРАННОЙ КАТЕГОРИИ</p>
-                    <a href='/'>Главная</a>-
-                    <a href='/'>Категория</a>-
-                    <a href='/'>Подкатегория</a>
-                </div>
+                {this.getTopLinks()}
                 <div className='productsMain'>
                     <div className='verticalMenu'>
                         <a className="btn" data-toggle="collapse" href="#multiCollapseExample1"

@@ -314,7 +314,7 @@ a:hover {
 }
 
 .products .row img {
-  width: 130%;
+  width: 100%;
   border: 1px solid #09A725;
   border-radius: 5px;
   margin-left: 15%;
@@ -329,12 +329,13 @@ a:hover {
 }
 
 .products .row .col {
-  margin-left: 1%;
+  margin-left: 5%;
 }
 
 .products .row p {
+  width: 100%;
   font-size: 2vh;
-  margin-left: 62%;
+  margin-left: 20%;
 }
 
 .scale:hover {
@@ -350,13 +351,12 @@ a:hover {
 }
 
 .verticalMenu {
-  width: 112%;
+  width: 250%;
   height: 10%;
   margin-top: 2%;
   text-align: center;
   background-color: #C4C4C4;
   margin-left: 2%;
-  margin-bottom: 2%;
 }
 
 .topLinks {
@@ -381,12 +381,13 @@ a:hover {
 }
 
 .rowFiltr {
-  margin-left: 2%;
+  margin-left: 8%;
   margin-bottom: 2%;
 }
 
 .rowFiltr img {
   width: 2%;
+
 }
 
 .products .select {
@@ -396,10 +397,6 @@ a:hover {
 .products .rowFiltr a {
   margin-left: 1%;
   font-size: 2vh;
-}
-
-.verticalMenu li {
-  position: relative;
 }
 
 .modal-content {
@@ -556,7 +553,7 @@ a:hover {
   margin-left: 1%;
 }
 
-.orderProduct{
+.orderProduct {
   width: 80%;
   margin-left: 2%;
 }
@@ -636,6 +633,10 @@ h2 {
 
 .productMenu .verticalMenu {
   width: 30%;
+}
+
+.productMenu{
+  display: flex;
 }
 
 .product .row .nameProduct {
