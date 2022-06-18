@@ -360,24 +360,20 @@ a:hover {
 }
 
 .topLinks {
-  font-size: 2vh;
+  font-size: 2.5vh;
   background-color: #C4C4C4;
   border: 1px solid #09A725;
 }
 
 .topLinks p {
-  margin-top: 0.1%;
   font-weight: bold;
+  margin-left: 0.2%;
 }
 
 .topLinks a {
   font-size: 2vh;
   color: #5E5E5E;
   text-decoration: underline;
-}
-
-.topLinks a :active {
-  text-decoration: none;
 }
 
 .rowFiltr {
@@ -643,7 +639,6 @@ h2 {
   font-size: 3vh;
   margin-left: 5%;
   margin-top: 5%;
-  color: #6F6F6F;
 }
 
 .lineProduct {

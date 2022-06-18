@@ -31,7 +31,6 @@ class Products extends Component {
     getTopLinks = () => {
         return (
             <div className='topLinks'>
-                <p>{this.state.products[0] && this.state.products[0].subcategory.name}</p>
                 <a href='/categories'>Каталог</a>-
                 <a href={`/categories/${this.state.products[0] && this.state.products[0].subcategory.category.id}/subcategories/`}>
                     {this.state.products[0] && this.state.products[0].subcategory.category.name}</a>-
@@ -41,7 +40,7 @@ class Products extends Component {
             </div>
         )
     };
-    
+
     render() {
         return (
             <>

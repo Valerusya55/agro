@@ -40,7 +40,6 @@ class Product extends Component {
     console.log(this.state.product.subcategory);
     return (
       <div className='topLinks'>
-        <p>{this.state.product.subcategory && this.state.product.subcategory.name}</p>
         <a href='/categories'>Каталог</a>-
         <a href={`/categories/${this.state.product.subcategory && this.state.product.subcategory.category.id}/subcategories/`}>
           {this.state.product.subcategory && this.state.product.subcategory.category.name}</a>-
