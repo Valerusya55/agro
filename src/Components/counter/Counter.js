@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Counter.css';
 
 function Btn({ children, onClick }) {
   return (
@@ -20,10 +21,11 @@ function Counter() {
   }
 
   return (
-    <div className='counterBasket'>
-      <Btn onClick={handleIncrement}>+</Btn>
-      <span className='textCounter'>{counter}</span>
+    <div className='counter'>
       <Btn onClick={handleDecrement}>-</Btn>
+      <span className='textCounter'>{counter}</span>
+      <Btn onClick={handleIncrement}>+</Btn>
+      <button className='btnBasket'>В корзину</button>
     </div>
   );
 }

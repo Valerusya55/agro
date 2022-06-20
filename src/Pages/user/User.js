@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import ChangeData from '../Components/ChangeData'
-import SuccessfulRegistration from '../Components/SuccessfulRegistration'
+import ChangeData from '../../Components/ChangeData'
+import './User.css';
 
 export default class User extends Component {
     render() {
@@ -45,7 +45,6 @@ export default class User extends Component {
                         <div className="collapse multi-collapse" id="multiCollapseExample1">
                         <div className='orderProduct'>
                             <div className="card">
-                            
                                     <div className='productBasket'>
                                         <img src='tovar.jpg'></img>
                                         <a href=''>Название товара</a>

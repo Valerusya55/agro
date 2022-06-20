@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import CarouselBox from '../Components/CarouselBox'
+import CarouselBox from '../../Components/carouselBox/CarouselBox'
+import './Main.css';
 
 export default class Main extends Component {
   render() {

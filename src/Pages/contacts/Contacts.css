@@ -1,0 +1,81 @@
+.contact img {
+    margin: 2%;
+    width: 60%;
+    border-radius: 4px;
+}
+
+.contact {
+    width: 33.333%;
+    text-align: center;
+    float: left;
+}
+
+.contactMiddle {
+    width: 33.333%;
+    text-align: left;
+    float: left;
+}
+
+.contactBottom {
+    width: 33.333%;
+    text-align: left;
+    float: left;
+}
+
+.contactMiddle img {
+    float: left;
+    width: 5%;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+.contactMiddle p {
+    margin-top: 2%;
+}
+
+.ContactBlock {
+    height: 700px;
+}
+
+.rectangleOne {
+    background: #C4C4C4;
+    width: 150px;
+    height: 35px;
+    margin-top: 4%;
+    border-radius: 4px;
+    color: #5E5E5E;
+    vertical-align: top;
+}
+
+.rectangleOne img {
+    width: 20%;
+    float: left;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 4%;
+}
+
+.rectangleOne p {
+    padding: 5px;
+}
+
+.rectangleTwo {
+    background: #C4C4C4;
+    width: 220px;
+    height: 35px;
+    margin-top: 4%;
+    border-radius: 4px;
+    color: #5E5E5E;
+}
+
+.rectangleTwo img {
+    width: 15%;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+
+.rectangleTwo p {
+    padding: 5px;
+}

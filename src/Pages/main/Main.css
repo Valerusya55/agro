@@ -1,0 +1,47 @@
+.mainCatalog {
+    height: 80px;
+    text-align: left;
+}
+
+.mainCatalog p {
+    display: inline-block;
+    font-size: 35px;
+    color: #5E5E5E;
+    margin-left: 2%;
+    font-weight: bold;
+}
+
+.mainCatalog a {
+    display: inline-block;
+    font-size: 18px;
+    color: #5e5e5e;
+}
+
+.catalog .row img {
+    width: 70%;
+    border: 1px solid #09A725;
+    border-radius: 5px;
+    margin-left: 15%;
+}
+
+.catalog .row p {
+    text-align: center;
+    font-size: 20px;
+    color: #5e5e5e;
+}
+
+.products .row img {
+    width: 100%;
+    border: 1px solid #09A725;
+    border-radius: 5px;
+    margin-left: 15%;
+}
+
+.row {
+    width: 100%;
+}
+
+.catalog .row {
+    margin-top: 2%;
+}
+

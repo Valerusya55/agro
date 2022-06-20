@@ -1,0 +1,16 @@
+.About p {
+    margin-top: 1%;
+    margin-left: 5%;
+    font-size: 20px;
+    width: 90%;
+}
+
+.About h5 {
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.About img {
+    margin-left: 20%;
+    width: 60%;
+}

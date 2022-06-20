@@ -1,0 +1,74 @@
+.basketProduct {
+    border: 1px solid #09A725;
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+
+.basketProduct h1 {
+    margin-left: 2%;
+}
+
+.basketProduct img {
+    width: 20%;
+    margin-left: 2%;
+    border: 1px solid #09A725;
+    border-radius: 3px;
+    margin-bottom: 1%;
+}
+
+.basketProduct a {
+    font-size: 2vh;
+    margin-top: 0;
+    margin-left: 1%;
+}
+
+.orderPrice {
+    border: 1px solid #09A725;
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 6%;
+}
+
+.orderPrice p {
+    margin-left: 2%;
+    font-size: 2vh;
+    color: #6F6F6F;
+    font-weight: bold;
+}
+
+.orderPrice h1 {
+    margin-left: 2%;
+}
+
+.orderPrice img {
+    margin-top: 26%;
+    float: left;
+    width: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.orderPrice button {
+    margin-top: 8%;
+    background-color: #09A725;
+    border: #09A725;
+    width: 70%;
+    height: 40px;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2vh;
+    margin-left: 7%;
+}
+
+.orderPrice button:hover {
+    background-color: #007915 !important;
+}
+
+.lineSearch {
+    border-bottom: 1px solid #09A725;
+    margin-bottom: 1%;
+}

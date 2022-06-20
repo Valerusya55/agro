@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import './CounterBasket.css';
 
 function Btn({ children, onClick }) {
   return (
-    <button className='btnCounter' onClick={onClick}>
+    <button onClick={onClick}>
       {children}
     </button>
   );
@@ -20,11 +21,10 @@ function Counter() {
   }
 
   return (
-    <div className='counter'>
-      <Btn onClick={handleDecrement}>-</Btn>
+    <div className='counterBasket'>
+     <Btn onClick={handleDecrement}>-</Btn>
       <span className='textCounter'>{counter}</span>
       <Btn onClick={handleIncrement}>+</Btn>
-      <button className='btnBasket'>В корзину</button>
     </div>
   );
 }

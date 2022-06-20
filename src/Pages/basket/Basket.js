@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import CounterBasket from '../Components/CounterBasket'
+import CounterBasket from '../../Components/counterBasket/CounterBasket'
+import './Basket.css';
+
 
 export default class Basket extends Component {
     render() {

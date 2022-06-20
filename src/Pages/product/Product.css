@@ -1,0 +1,92 @@
+.product .row img {
+    width: 70%;
+    border: 1px solid #09A725;
+    border-radius: 5px;
+    margin-left: 25%;
+    margin-top: 12%;
+}
+
+.productMenu .verticalMenu {
+    width: 30%;
+}
+
+.productMenu {
+    display: flex;
+}
+
+.product .row .nameProduct {
+    font-size: 3vh;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.lineProduct {
+    border-bottom: 2px solid #09A725;
+    margin-bottom: 1%;
+    width: 70%;
+}
+
+.product {
+    margin-bottom: 5%;
+}
+
+.product .row .price {
+    font-size: 3vh;
+    margin-left: 6%;
+    margin-top: 0;
+}
+
+.product .row .availability {
+    font-size: 2vh;
+    margin-left: 6%;
+    margin-top: 0;
+    color: #6F6F6F;
+    margin-top: 1%;
+}
+
+.verticalMenu {
+    width: 250%;
+    height: 10%;
+    margin-top: 2%;
+    text-align: center;
+    background-color: #C4C4C4;
+    margin-left: 2%;
+}
+
+.topLinks {
+    font-size: 2.5vh;
+    background-color: #C4C4C4;
+    border: 1px solid #09A725;
+}
+
+.topLinks p {
+    font-weight: bold;
+    margin-left: 0.2%;
+}
+
+.topLinks a {
+    font-size: 2vh;
+    color: #5E5E5E;
+    text-decoration: underline;
+}
+
+.verticalMenu a {
+    border: 1px solid #09A725;
+    color: #000000;
+    font-size: 2vh;
+    width: 100%;
+}
+
+.verticalMenu a:hover {
+    border: 1px solid #09A725;
+    color: #000000;
+    font-size: 2vh;
+    width: 100%;
+}
+
+.card {
+    background-color: #C4C4C4;
+    border: 1px solid #09A725;
+    border-radius: 2px;
+    margin-bottom: 2%;
+}

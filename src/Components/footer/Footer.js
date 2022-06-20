@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import telega from '../assets/telega.png';
-import phone from '../assets/phone.png';
-import whatsup from '../assets/whatsup.png';
-import mail from '../assets/mail.png';
-import geo from '../assets/geo.png';
+import telega from '../../assets/telega.png';
+import phone from '../../assets/phone.png';
+import whatsup from '../../assets/whatsup.png';
+import mail from '../../assets/mail.png';
+import geo from '../../assets/geo.png';
+import './Footer.css';
 
 export default class Footerooter extends Component {
     render() {

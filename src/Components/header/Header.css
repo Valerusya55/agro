@@ -1,0 +1,119 @@
+.header {
+    position: fixed top;
+}
+
+.MenuTop {
+    background-color: #09A725;
+    width: 100%;
+    height: 30px;
+}
+
+.headerImage {
+    width: 24px;
+    height: 26px;
+    left: 10px;
+    top: 13px;
+    float: left;
+    margin: 2px;
+}
+
+.one {
+    display: inline-flex;
+    float: left;
+    padding-left: 5px;
+}
+
+.two {
+    display: inline-flex;
+    float: right;
+    padding-right: 10px;
+}
+
+.MenuMiddle {
+    width: 100%;
+    top: 30px;
+    background: url(../../Components/background.jpg);
+    background-position: 100% 60%;
+    height: 105px;
+}
+
+.MenuBottom {
+    background: #09A725;
+    width: 100%;
+    height: 47px;
+    top: 17%;
+    z-index: 100;
+}
+
+.burgerMenu {
+    background-color: #09A725;
+}
+
+.MenuBottom a {
+    color: #000000 !important;
+    font-weight: 500;
+    font-size: 2.5vh;
+    text-align: center;
+    margin-left: 3%;
+}
+
+.MenuBottom a:hover {
+    color: #000000 !important;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+.rightMenu {
+    width: 65%;
+    float: right;
+    height: 100%;
+}
+
+.leftMenu {
+    width: 35%;
+    float: left;
+    height: 100%;
+}
+
+.basket {
+    float: right;
+    width: 40%;
+    font-size: 130%;
+}
+
+.basket img {
+    width: 5vh;
+    margin-top: 8%;
+    margin-left: 45%;
+    display: inline-block;
+}
+
+.basketInfo {
+    float: right;
+    font-size: 2.5vh;
+    margin-top: 5%;
+    margin-right: 20%;
+}
+
+.control {
+    width: 45%;
+    float: left;
+    margin-top: 3%;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-left: 15%;
+}
+
+.control a {
+    background-color: #09A725;
+    width: 40%;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.control a:hover {
+    background-color: #007915;
+    font-size: 2vh;
+}

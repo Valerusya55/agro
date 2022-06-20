@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { getProductById } from './Categories/actions';
-import Counter from '../Components/Counter';
+import { getProductById } from '../Categories/actions';
+import Counter from '../../Components/counter/Counter';
 import { useParams } from 'react-router-dom';
+import './Product.css';
 
 class Product extends Component {
   constructor(props) {

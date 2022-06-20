@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import first from '../assets/first.jpg'
-import second from '../assets/second.jpg'
+import first from '../../assets/first.jpg'
+import second from '../../assets/second.jpg'
+import './CarouselBox.css';
 
 export default class CarouselBox extends Component {
   render() {
