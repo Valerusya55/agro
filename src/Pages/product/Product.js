@@ -39,6 +39,7 @@ class Product extends Component {
           <p className='price'>{product.price} руб./шт.</p>
           <Availability available={product.available} />
           <p className='availability'>Наши менеджеры обязательно свяжутся с вами и уточнят условия заказа</p>
+          <Counter/>
         </div>
       </div>
     )
