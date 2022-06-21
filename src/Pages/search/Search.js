@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { FormControl, Form } from 'react-bootstrap';
+import './Search.css';
 
 export default class Search extends Component {
     render() {

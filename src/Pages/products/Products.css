@@ -1,0 +1,38 @@
+.products .row .col {
+    margin-left: 5%;
+}
+
+.products .row p {
+    width: 100%;
+    font-size: 2vh;
+    margin-left: 20%;
+}
+
+.productsMain {
+    display: flex;
+}
+
+.products {
+    margin-top: 2%;
+}
+
+.rowFiltr {
+    margin-left: 8%;
+    margin-bottom: 2%;
+}
+
+.rowFiltr img {
+    width: 2%;
+}
+
+.products .select {
+    margin-left: 1%;
+    border: 1px solid #09A725;
+    border-radius: 2px;
+    background-color: #EDEDED;
+}
+
+.products .rowFiltr a {
+    margin-left: 1%;
+    font-size: 2vh;
+}

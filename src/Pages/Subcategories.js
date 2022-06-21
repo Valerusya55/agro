@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { getCategoryById } from './Categories/actions';
+import { getCategoryById } from './categories/actions';
 import { useParams } from 'react-router-dom';
 
 

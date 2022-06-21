@@ -1,0 +1,18 @@
+.search {
+    margin-left: 5%;
+    height: 150px;
+}
+
+.lineSearch {
+    border-bottom: 1px solid #09A725;
+    margin-bottom: 1%;
+}
+
+.searchProduct {
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.searchProduct a {
+    font-size: 2vh;
+}

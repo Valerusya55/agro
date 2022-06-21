@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { getSubcategoryById } from './Categories/actions';
+import { getSubcategoryById } from '../categories/actions';
 import { useParams } from 'react-router-dom';
+import './Products.css';
 
 class Products extends Component {
     constructor(props) {
@@ -98,7 +99,7 @@ class Products extends Component {
                     </div>
                     <div className='products'>
                         <div className="rowFiltr">
-                            <img src={require('../assets/filtr.png')}></img>
+                            <img src={require('../../assets/filtr.png')}></img>
                             <select className="select" data-mdb-filter="true">
                                 <option defaultValue>Цена</option>
                                 <option value="1">400-800</option>

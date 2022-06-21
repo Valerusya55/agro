@@ -13,8 +13,12 @@
 
 .mainCatalog a {
     display: inline-block;
-    font-size: 18px;
+    font-size: 2.2vh;
     color: #5e5e5e;
+}
+
+.mainCatalog a:hover{
+    font-size: 2.2vh;
 }
 
 .catalog .row img {

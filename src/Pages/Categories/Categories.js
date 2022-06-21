@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { getCategories } from './Categories/actions';
+import { getCategories } from './actions';
+import './Categories.css';
 
 export default class Categories extends Component {
   constructor(props) {

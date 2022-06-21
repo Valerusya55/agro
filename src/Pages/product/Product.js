@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getProductById } from '../Categories/actions';
+import { getProductById } from '../categories/actions';
 import Counter from '../../Components/counter/Counter';
 import { useParams } from 'react-router-dom';
 import './Product.css';
@@ -38,7 +38,6 @@ class Product extends Component {
   };
 
   getTopLinksProduct = () => {
-    console.log(this.state.product.subcategory);
     return (
       <div className='topLinks'>
         <a href='/categories'>Каталог</a>-
