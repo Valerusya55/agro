@@ -19,7 +19,7 @@ class Products extends Component {
 
     getProductList = () => {
         return this.state.products.map(product => (
-            <div className="col col-lg-2 col-md-2  col-md-offset-2 col-xs-2 thumb scale">
+            <div key={product.id} className="col col-lg-2 col-md-2  col-md-offset-2 col-xs-2 thumb scale">
                 <a href={`/categories/${product.subcategory.category.id}/subcategories/${product.subcategory.id}/products/${product.id}`}>
                     <img src={product.imgURL}></img>
                     <p>{product.name}</p>
