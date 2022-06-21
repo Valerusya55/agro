@@ -7,20 +7,21 @@ class Products extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            products: []
+            products: [],
+            subcategory: {}
         };
     }
 
     componentDidMount() {
         getSubcategoryById(this.props.params.idCategory, this.props.params.idSubcategory).then(response => {
-            this.setState({ products: response.products });
+            this.setState({ products: response.products, subcategory: response.subcategory });
         })
     }
 
     getProductList = () => {
         return this.state.products.map(product => (
             <div key={product.id} className="col col-lg-2 col-md-2  col-md-offset-2 col-xs-2 thumb scale">
-                <a href={`/categories/${product.subcategory.category.id}/subcategories/${product.subcategory.id}/products/${product.id}`}>
+                <a href={`/categories/${this.state.subcategory.category.id}/subcategories/${this.state.subcategory.id}/products/${product.id}`}>
                     <img src={product.imgURL}></img>
                     <p>{product.name}</p>
                 </a>
@@ -33,11 +34,11 @@ class Products extends Component {
         return (
             <div className='topLinks'>
                 <a href='/categories'>Каталог</a>-
-                <a href={`/categories/${this.state.products[0] && this.state.products[0].subcategory.category.id}/subcategories/`}>
-                    {this.state.products[0] && this.state.products[0].subcategory.category.name}</a>-
-                <a href={`/categories/${this.state.products[0] && this.state.products[0].subcategory.category.id}/subcategories/
-                ${this.state.products[0] && this.state.products[0].subcategory.id}/products`}>
-                    {this.state.products[0] && this.state.products[0].subcategory.name}</a>
+                <a href={`/categories/${this.state.subcategory.category && this.state.subcategory.category.id}/subcategories/`}>
+                    {this.state.subcategory.category && this.state.subcategory.category.name}</a>-
+                <a href={`/categories/${this.state.subcategory.category && this.state.subcategory.category.id}/subcategories/
+                ${this.state.subcategory && this.state.subcategory.id}/products`}>
+                    {this.state.subcategory && this.state.subcategory.name}</a>
             </div>
         )
     };

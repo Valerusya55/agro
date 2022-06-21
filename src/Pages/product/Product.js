@@ -4,6 +4,14 @@ import Counter from '../../Components/counter/Counter';
 import { useParams } from 'react-router-dom';
 import './Product.css';
 
+function Availability(props) {
+  const available = props.available;
+  if (available) {
+    return <p className='availability'> В наличии</p>
+  }
+  return <p className='availability'> Нет в наличии</p>;
+}
+
 class Product extends Component {
   constructor(props) {
     super(props);
@@ -29,13 +37,14 @@ class Product extends Component {
           <p className='nameProduct'>{product.name}</p>
           <div className='lineProduct'></div>
           <p className='price'>{product.price} руб./шт.</p>
-          <p className='availability'>Есть в наличии</p>
-          <Counter />
+          <Availability available={product.available} />
           <p className='availability'>Наши менеджеры обязательно свяжутся с вами и уточнят условия заказа</p>
         </div>
       </div>
     )
   };
+
+  
 
   getTopLinksProduct = () => {
     return (

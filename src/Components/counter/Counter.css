@@ -1,12 +1,16 @@
 .counter {
     display: flex;
+    
     margin-bottom: 2%;
     padding-left: 6%;
 }
 
 .product .row .btnCounter {
-    width: 5%;
+    width: 40px;
     margin: 0;
+}
+.product .row .btnCounter :before{
+    width: auto;
 }
 
 .product .row .counter .btnBasket {
