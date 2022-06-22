@@ -67,7 +67,7 @@ class Product extends Component {
 
   getAllCategories = () => {
     return this.state.catalog.map(category => (
-      <>
+      <div key={category.category.id}>
         <a className="btn" data-toggle="collapse" href={`#multiCollapseExample${category.category.id}`}
           aria-expanded="false" aria-controls={`multiCollapseExample${category.category.id}`}>
           {category.category.name} ▼
@@ -75,13 +75,13 @@ class Product extends Component {
         <div className="collapse multi-collapse" id={`multiCollapseExample${category.category.id}`}>
           <div className="card">
             {category.subcategories.map(subcategory => (
-              <a href={`/categories/${subcategory.category.id}/subcategories/${subcategory.id}/products`}>
+              <a href={`/categories/${subcategory.category.id}/subcategories/${subcategory.id}/products`} key={subcategory.id}>
                 {subcategory.name}
               </a>
             ))}
           </div>
         </div>
-      </>
+      </div>
     ));
   };
 
