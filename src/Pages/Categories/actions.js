@@ -21,3 +21,8 @@ export const getProductById = (idCategory, idSubcategory, idProduct) => {
         idSubcategory + METHODS.GET_PRODUCT_BY_ID + idProduct;
     return get(url);
 };
+
+export const getCatalog = () => {
+    const url = makeURL(METHODS.GET_CATEGORIES + METHODS.GET_SUBCATEGORIES);
+    return get(url);
+};

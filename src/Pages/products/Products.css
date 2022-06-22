@@ -36,3 +36,12 @@
     margin-left: 1%;
     font-size: 2vh;
 }
+
+.productsMain .verticalMenu {
+    width: 600%;
+    height: 10%;
+    margin-top: 2%;
+    text-align: center;
+    background-color: #C4C4C4;
+    margin-left: 2%;
+}

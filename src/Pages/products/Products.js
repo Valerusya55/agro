@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getSubcategoryById } from '../categories/actions';
+import { getSubcategoryById, getCatalog } from '../categories/actions';
 import { useParams } from 'react-router-dom';
 import './Products.css';
 
@@ -8,13 +8,17 @@ class Products extends Component {
         super(props);
         this.state = {
             products: [],
-            subcategory: {}
+            subcategory: {},
+            catalog: [],
         };
     }
 
     componentDidMount() {
         getSubcategoryById(this.props.params.idCategory, this.props.params.idSubcategory).then(response => {
             this.setState({ products: response.products, subcategory: response.subcategory });
+        })
+        getCatalog().then(response => {
+            this.setState({ catalog: response.catalog });
         })
     }
 
@@ -27,6 +31,26 @@ class Products extends Component {
                 </a>
             </div>
 
+        ));
+    };
+
+    getAllCategories = () => {
+        return this.state.catalog.map(category => (
+            <>
+                <a className="btn" data-toggle="collapse" href={`#multiCollapseExample${category.category.id}`}
+                    aria-expanded="false" aria-controls={`multiCollapseExample${category.category.id}`}>
+                    {category.category.name} ▼
+                </a>
+                <div className="collapse multi-collapse" id={`multiCollapseExample${category.category.id}`}>
+                    <div className="card">
+                        {category.subcategories.map(subcategory => (
+                            <a href={`/categories/${subcategory.category.id}/subcategories/${subcategory.id}/products`}>
+                                {subcategory.name}
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </>
         ));
     };
 
@@ -49,54 +73,7 @@ class Products extends Component {
                 {this.getTopLinks()}
                 <div className='productsMain'>
                     <div className='verticalMenu'>
-                        <a className="btn" data-toggle="collapse" href="#multiCollapseExample1"
-                            aria-expanded="false" aria-controls="multiCollapseExample1">Гидравлика ▼</a>
-                        <div className="collapse multi-collapse" id="multiCollapseExample1">
-                            <div className="card">
-                                <a className="" href="#">Опрыскиватели</a>
-                                <a className="" href="#">Крестовины и карданные валы</a>
-                            </div>
-                        </div>
-                        <a className="btn" data-toggle="collapse" href="#multiCollapseExample2"
-                            aria-expanded="false" aria-controls="multiCollapseExample2">Опрыскиватели ▼</a>
-                        <div className="collapse multi-collapse" id="multiCollapseExample2">
-                            <div className="card">
-                                <a className="" href="#">Опрыскиватели</a>
-                                <a className="" href="#">Крестовины и карданные валы</a>
-                            </div>
-                        </div>
-                        <a className="btn" data-toggle="collapse" href="#multiCollapseExample3"
-                            aria-expanded="false" aria-controls="multiCollapseExample3">Крестовины и карданные валы ▼</a>
-                        <div className="collapse multi-collapse" id="multiCollapseExample3">
-                            <div className="card">
-                                <a className="" href="#">Опрыскиватели</a>
-                                <a className="" href="#">Крестовины и карданные валы</a>
-                            </div>
-                        </div>
-                        <a className="btn" data-toggle="collapse" href="#multiCollapseExample4"
-                            aria-expanded="false" aria-controls="multiCollapseExample4">Элеваторное оборудование ▼</a>
-                        <div className="collapse multi-collapse" id="multiCollapseExample4">
-                            <div className="card">
-                                <a className="" href="#">Опрыскиватели</a>
-                                <a className="" href="#">Крестовины и карданные валы</a>
-                            </div>
-                        </div>
-                        <a className="btn" data-toggle="collapse" href="#multiCollapseExample5"
-                            aria-expanded="false" aria-controls="multiCollapseExample5">Сельхозмашины ▼</a>
-                        <div className="collapse multi-collapse" id="multiCollapseExample5">
-                            <div className="card">
-                                <a className="" href="#">Опрыскиватели</a>
-                                <a className="" href="#">Крестовины и карданные валы</a>
-                            </div>
-                        </div>
-                        <a className="btn" data-toggle="collapse" href="#multiCollapseExample6"
-                            aria-expanded="false" aria-controls="multiCollapseExample6">Цепи и транспортеры ▼</a>
-                        <div className="collapse multi-collapse" id="multiCollapseExample6">
-                            <div className="card">
-                                <a className="" href="#">Опрыскиватели</a>
-                                <a className="" href="#">Крестовины и карданные валы</a>
-                            </div>
-                        </div>
+                        {this.getAllCategories()}
                     </div>
                     <div className='products'>
                         <div className="rowFiltr">

@@ -44,8 +44,8 @@
     margin-top: 1%;
 }
 
-.verticalMenu {
-    width: 250%;
+.productMenu .verticalMenu {
+    width: 35%;
     height: 10%;
     margin-top: 2%;
     text-align: center;
