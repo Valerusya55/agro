@@ -14,6 +14,7 @@
 
 .products {
     margin-top: 2%;
+    width: 100%;
 }
 
 .rowFiltr {
@@ -38,7 +39,7 @@
 }
 
 .productsMain .verticalMenu {
-    width: 600%;
+    width: 35%;
     height: 10%;
     margin-top: 2%;
     text-align: center;
