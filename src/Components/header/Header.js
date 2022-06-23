@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, FormControl, Form } from 'react-bootstrap';
 import logo from './logo.png';
-import Registration from '../Registration';
+import Registration from '../registration/Registration';
 import Autorization from '../Autorization';
 import phone from '../../assets/phone.png';
 import mail from '../../assets/mail.png';

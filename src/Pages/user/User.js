@@ -1,18 +1,26 @@
 import React, { Component } from 'react'
 import ChangeData from '../../Components/ChangeData'
+import AuthService from '../../services/auth.service';
 import './User.css';
 
 export default class User extends Component {
+    /*constructor(props) {
+        super(props);
+        this.state = {
+            currentUser: AuthService.getCurrentUser()
+        };
+    }*/
     render() {
+        /*const { currentUser } = this.state;*/
         return (
             <div className='personalData'>
                 <div className="row gy-5">
                     <div className="col-lg-3 col-md-3 col-xs-3 thumb">
                         <img src='avatar.png'></img>
                         <div className='textUser'>
-                            <p>Имя</p>
-                            <p>mail</p>
-                            <p>89136987458</p>
+                            <p>currentUser.name</p>
+                            <p>currentUser.email</p>
+                            <p>currentUser.phone</p>
                             <ChangeData />
                         </div>
                     </div>
@@ -43,8 +51,8 @@ export default class User extends Component {
                             <div className='arrow'><p>▼</p></div>
                         </div>
                         <div className="collapse multi-collapse" id="multiCollapseExample1">
-                        <div className='orderProduct'>
-                            <div className="card">
+                            <div className='orderProduct'>
+                                <div className="card">
                                     <div className='productBasket'>
                                         <img src='tovar.jpg'></img>
                                         <a href=''>Название товара</a>

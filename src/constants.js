@@ -4,3 +4,4 @@ export const METHODS = {
     GET_PRODUCT_BY_ID: '/products/',
     GET_SUBCATEGORIES: 'subcategories',
 };
+
