@@ -4,6 +4,9 @@ import AuthService from '../services/auth.service';
 import CheckButton from 'react-validation/build/button';
 import Form from 'react-validation/build/form';
 import Input from 'react-validation/build/input';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const required = value => {
     if (!value) {
@@ -14,6 +17,13 @@ const required = value => {
         );
     }
 };
+
+function NavigateHistory() {
+    const { navigate } = useNavigate();
+    return (
+        navigate("/user")
+    );
+}
 
 export default class Autorization extends Component {
     constructor(props) {
@@ -52,10 +62,11 @@ export default class Autorization extends Component {
 
         this.form.validateAll();
 
+
         if (this.checkBtn.context._errors.length === 0) {
             AuthService.login(this.state.email, this.state.password).then(
                 () => {
-                    this.props.history.push("/profile");
+                    <NavigateHistory />
                     window.location.reload();
                 },
                 error => {
@@ -90,21 +101,20 @@ export default class Autorization extends Component {
                                 <h3>Личный кабинет</h3>
                                 <Form onSubmit={this.handleLogin} ref={c => { this.form = c }}>
                                     <div>
-                                    <Input type="text" className="form-control" name="login_auth" id="login_auth" placeholder="email"
-                                        value={this.state.email} onChange={this.onChangeEmail} validations={[required]} />
-                                    <Input type="password" className="form-control" name="pass_auth" id="pass_auth" placeholder="Пароль"
-                                        autoComplete="off" value={this.state.password} onChange={this.onChangePassword}
-                                        validations={[required]} />
-                                    <button disabled={this.state.loading}>
-                                        {this.state.loading && (<span className='spinner-border spinner-border-sm'></span>)}
-                                        Войти
-                                    </button>
+                                        <Input type="text" className="form-control" name="login_auth" id="login_auth" placeholder="email"
+                                            value={this.state.email} onChange={this.onChangeEmail} validations={[required]} />
+                                        <Input type="password" className="form-control" name="pass_auth" id="pass_auth" placeholder="Пароль"
+                                            autoComplete="off" value={this.state.password} onChange={this.onChangePassword}
+                                            validations={[required]} />
+                                        <button disabled={this.state.loading}>
+                                            {this.state.loading && (<span className='spinner-border spinner-border-sm'></span>)}
+                                            Войти
+                                        </button>
                                     </div>
-                                    
-                                    {this.state.message && (
-                                        <div className='alert alert-danger' role='alert'>
-                                            {this.state.message}
-                                        </div>
+
+                                    {this.state.message && (<div className='alert alert-danger' role='alert'>
+                                        {this.state.message}
+                                    </div>
                                     )}
                                     <CheckButton style={{ display: "none" }}
                                         ref={c => { this.checkBtn = c; }} />

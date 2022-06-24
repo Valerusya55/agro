@@ -7,10 +7,36 @@ import phone from '../../assets/phone.png';
 import mail from '../../assets/mail.png';
 import user from '../../assets/user.png';
 import basket from '../../assets/basket.png';
+import AuthService from '../../services/auth.service';
 import './Header.css';
 
 export default class Header extends Component {
+	constructor(props) {
+		super(props);
+		this.logOut = this.logOut.bind(this);
+		this.state = {
+			showAdminBoard: false,
+			currentUser: undefined
+		};
+	}
+
+	componentDidMount() {
+		const user = AuthService.getCurrentUser();
+
+		if (user) {
+			this.setState({
+				currentUser: AuthService.getCurrentUser(),
+				//showAdminBoard: user.roles.includes("ROLE_ADMIN")
+			});
+		}
+	}
+
+	logOut() {
+		AuthService.logout();
+	}
 	render() {
+		const { currentUser, showAdminBoard } = this.state;
+		console.log(currentUser);
 		return (
 			<>
 				<div className='header'>
@@ -23,9 +49,15 @@ export default class Header extends Component {
 						</div>
 						<div className='two'>
 							<img className='headerImage' src={user}></img>
-							<Autorization />
-							|
-							<Registration />
+							{/* {currentUser ? (
+								<a href='/user'>Личный кабинет</a>
+								|
+								<a href='/' onClick={this.logOut}>Выйти</a>
+							) : ( */}
+								<Autorization />
+								|
+								<Registration />
+							{/* )} */}
 						</div>
 					</div>
 					<div className='MenuMiddle'>
