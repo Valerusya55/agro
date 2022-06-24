@@ -18,6 +18,7 @@ import Basket from '../src/Pages/basket/Basket';
 import Header from '../src/Components/header/Header';
 import Footer from '../src/Components/footer/Footer';
 
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>

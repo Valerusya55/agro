@@ -4,21 +4,22 @@ import AuthService from '../../services/auth.service';
 import './User.css';
 
 export default class User extends Component {
-    /*constructor(props) {
+    constructor(props) {
         super(props);
         this.state = {
             currentUser: AuthService.getCurrentUser()
         };
-    }*/
+    }
     render() {
-        /*const { currentUser } = this.state;*/
+        const { currentUser } = this.state;
+        console.log(currentUser);
         return (
             <div className='personalData'>
                 <div className="row gy-5">
                     <div className="col-lg-3 col-md-3 col-xs-3 thumb">
                         <img src='avatar.png'></img>
                         <div className='textUser'>
-                            <p>currentUser.name</p>
+                            <p>{currentUser}</p>
                             <p>currentUser.email</p>
                             <p>currentUser.phone</p>
                             <ChangeData />
