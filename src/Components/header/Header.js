@@ -22,7 +22,7 @@ export default class Header extends Component {
 
 	componentDidMount() {
 		const user = AuthService.getCurrentUser();
-
+		console.log(user);
 		if (user) {
 			this.setState({
 				currentUser: AuthService.getCurrentUser(),
