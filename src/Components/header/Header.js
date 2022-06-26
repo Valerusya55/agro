@@ -20,9 +20,8 @@ export default class Header extends Component {
 		};
 	}
 
-	componentDidMount() {
+	componentWillMount() {
 		const user = AuthService.getCurrentUser();
-		console.log(user);
 		if (user) {
 			this.setState({
 				currentUser: AuthService.getCurrentUser(),
@@ -36,7 +35,6 @@ export default class Header extends Component {
 	}
 	render() {
 		const { currentUser, showAdminBoard } = this.state;
-		console.log(currentUser);
 		return (
 			<>
 				<div className='header'>
@@ -49,15 +47,19 @@ export default class Header extends Component {
 						</div>
 						<div className='two'>
 							<img className='headerImage' src={user}></img>
-							{/* {currentUser ? (
-								<a href='/user'>Личный кабинет</a>
-								|
-								<a href='/' onClick={this.logOut}>Выйти</a>
-							) : ( */}
-								<Autorization />
-								|
-								<Registration />
-							{/* )} */}
+							{currentUser ? (
+								<div>
+									<a href='/user'>Личный кабинет</a>
+									|
+									<a href='/' onClick={this.logOut}>Выйти</a>
+								</div>
+							) : (
+								<div>
+									<Autorization />
+									|
+									<Registration />
+								</div>
+							)}
 						</div>
 					</div>
 					<div className='MenuMiddle'>

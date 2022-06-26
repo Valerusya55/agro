@@ -16,21 +16,19 @@ class AuthService {
       password
     })
       .then(response => {
-        console.log(response);
         if (response.data.token) {
-          localStorage.setItem('user', JSON.stringify( response.data));
+          localStorage.setItem('user', JSON.stringify(response.data));
         }
         return response.data;
       });
   }
 
-  logout(){
+  logout() {
     localStorage.removeItem('user');
   }
 
   getCurrentUser() {
-    console.log(localStorage.getItem('user'));
-    return localStorage.getItem('user');
+    return JSON.parse(localStorage.getItem('user'));
   }
 }
 export default new AuthService();
